@@ -12,15 +12,13 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
     {
         [Key]
         public int GastoId { get; set; }
-        public DateTime FechaGasto { get; set; }
-        public double MontoGasto { get; set; }
+        public string DescripcionGasto { get; set; }
         public int PresupuestoId { get; set; }
 
         public Gastos()
         {
             GastoId = 0;
-            FechaGasto = DateTime.Now;
-            MontoGasto = 0;
+            DescripcionGasto = string.Empty;
             GastosDetalle = new List<GastosDetalle>();
             PresupuestoId = 0;
         }

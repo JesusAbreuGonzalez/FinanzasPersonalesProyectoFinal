@@ -17,7 +17,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         public Categorias()
         {
             CategoriaId = 0;
-            NombreCategoria = "";
+            NombreCategoria = string.Empty;
             Presupuestos = new List<Presupuestos>();
         }
 

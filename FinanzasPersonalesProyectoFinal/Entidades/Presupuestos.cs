@@ -20,7 +20,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         public Presupuestos()
         {
             PresupuestoId = 0;
-            NombrePresupuesto = "";
+            NombrePresupuesto = string.Empty;
             MontoPresupuesto = 0;
             FechaCreacion = DateTime.Now;
             CategoriaId = 0;

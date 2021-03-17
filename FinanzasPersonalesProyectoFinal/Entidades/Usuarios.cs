@@ -23,10 +23,10 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         {
             UsuarioId = 0;
             FechaIngreso = DateTime.Now;
-            Alias = "";
-            Nombres = "";
-            Email = "";
-            Clave = "";
+            Alias = string.Empty;
+            Nombres = string.Empty;
+            Email = string.Empty;
+            Clave = string.Empty;
             Activo = false;
             Categorias = new List<Categorias>();
         }

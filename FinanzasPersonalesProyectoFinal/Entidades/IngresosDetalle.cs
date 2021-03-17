@@ -18,7 +18,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         {
             DetalleId = 0;
             IngresoId = 0;
-            DescipcionIngreso = "";
+            DescipcionIngreso = string.Empty;
         }
 
     }
