@@ -12,13 +12,15 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         [Key]
         public int DetalleId { get; set; }
         public int IngresoId { get; set; }
-        public string DescipcionIngreso { get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public double MontoIgreso { get; set; }
 
         public IngresosDetalle()
         {
             DetalleId = 0;
             IngresoId = 0;
-            DescipcionIngreso = string.Empty;
+            FechaIngreso = DateTime.Now;
+            MontoIgreso = 0;
         }
 
     }

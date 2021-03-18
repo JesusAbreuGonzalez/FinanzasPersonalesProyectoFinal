@@ -12,17 +12,15 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
     {
         [Key]
         public int IngresoId { get; set; }
-        public DateTime FechaIngreso { get; set; }
-        public double MontoIgreso { get; set; }
         public int PresupuestoId { get; set; }
+        public string DescripcionIngreso { get; set; }
 
         public Ingresos()
         {
             IngresoId = 0;
-            FechaIngreso = DateTime.Now;
-            MontoIgreso = 0;
             IngresosDetalle = new List<IngresosDetalle>();
             PresupuestoId = 0;
+            DescripcionIngreso = string.Empty;
         }
 
         [ForeignKey("IngresoId")]

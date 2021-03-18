@@ -10,16 +10,16 @@ using System.Threading.Tasks;
 
 namespace FinanzasPersonalesProyectoFinal.BLL
 {
-    public class GastosBLL
+    public class IngresosBLL
     {
-        public static bool ExisteGasto(string descripcion)
+        public static bool Existe(string descripcion)
         {
             bool encontrado = false;
             var contexto = new Contexto();
 
             try
             {
-                encontrado = contexto.Gastos.Any(e => e.DescripcionGasto.ToLower() == descripcion.ToLower());
+                encontrado = contexto.Ingresos.Any(e => e.DescripcionIngreso.ToLower() == descripcion.ToLower());
 
             }
             catch (Exception)
@@ -34,14 +34,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return encontrado;
         }
 
-        private static bool Insertar(Gastos gastos)
+        private static bool Insertar(Ingresos ingresos)
         {
             bool paso = false;
             var contexto = new Contexto();
 
             try
             {
-                contexto.Gastos.Add(gastos);
+                contexto.Ingresos.Add(ingresos);
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -56,20 +56,20 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return paso;
         }
 
-        //Metodo para modificar los gastos
-        private static bool Modificar(Gastos gastos)
+        //Metodo para modificar los ingresos
+        private static bool Modificar(Ingresos ingresos)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
 
             try
             {
-                contexto.Database.ExecuteSqlRaw($"DELETE FROM GastosDetalle Where GastoId = {gastos.GastoId}");
-                foreach (var anterior in gastos.GastosDetalle)
+                contexto.Database.ExecuteSqlRaw($"DELETE FROM GastosDetalle Where GastoId = {ingresos.IngresoId}");
+                foreach (var anterior in ingresos.IngresosDetalle)
                 {
                     contexto.Entry(anterior).State = EntityState.Added;
                 }
-                contexto.Entry(gastos).State = EntityState.Modified;
+                contexto.Entry(ingresos).State = EntityState.Modified;
                 paso = (contexto.SaveChanges() > 0);
             }
             catch (Exception)
@@ -85,12 +85,12 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
         }
 
-        public static bool Guardar(Gastos gastos)
+        public static bool Guardar(Ingresos ingresos)
         {
-            if (!ExisteGasto(gastos.DescripcionGasto))
-                return Insertar(gastos);
+            if (!Existe(ingresos.DescripcionIngreso))
+                return Insertar(ingresos);
             else
-                return Modificar(gastos);
+                return Modificar(ingresos);
         }
 
         public static bool Eliminar(int id)
@@ -100,7 +100,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
             try
             {
-                var eliminar = contexto.Gastos.Find(id);
+                var eliminar = contexto.Ingresos.Find(id);
                 contexto.Entry(eliminar).State = EntityState.Deleted;
 
                 paso = (contexto.SaveChanges() > 0);
@@ -117,14 +117,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return paso;
         }
 
-        public static Gastos Buscar(int id)
+        public static Ingresos Buscar(int id)
         {
             var contexto = new Contexto();
-            var gastos = new Gastos();
+            var ingresos = new Ingresos();
 
             try
             {
-                gastos = contexto.Gastos.Include(x => x.GastosDetalle).Where(p => p.GastoId == id).SingleOrDefault();
+                ingresos = contexto.Ingresos.Include(x => x.IngresosDetalle).Where(p => p.IngresoId == id).SingleOrDefault();
             }
             catch (Exception)
             {
@@ -135,17 +135,17 @@ namespace FinanzasPersonalesProyectoFinal.BLL
                 contexto.Dispose();
             }
 
-            return gastos;
+            return ingresos;
         }
 
-        public static List<Gastos> GetList(Expression<Func<Gastos, bool>> criterio)
+        public static List<Ingresos> GetList(Expression<Func<Ingresos, bool>> criterio)
         {
-            List<Gastos> lista = new List<Gastos>();
+            List<Ingresos> lista = new List<Ingresos>();
             Contexto contexto = new Contexto();
             try
             {
                 //Obtenemos la lista y la filtramos segun el criterio recibido por parametro
-                lista = contexto.Gastos.Where(criterio).ToList();
+                lista = contexto.Ingresos.Where(criterio).ToList();
             }
             catch (Exception)
             {
@@ -158,14 +158,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return lista;
         }
 
-        public static List<Gastos> GetGatos()
+        public static List<Ingresos> GetIngreso()
         {
-            List<Gastos> lista = new List<Gastos>();
+            List<Ingresos> lista = new List<Ingresos>();
             Contexto contexto = new Contexto();
 
             try
             {
-                lista = contexto.Gastos.ToList();
+                lista = contexto.Ingresos.ToList();
             }
             catch (Exception)
             {
