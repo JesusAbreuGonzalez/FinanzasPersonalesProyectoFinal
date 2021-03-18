@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FinanzasPersonalesProyectoFinal.BLL
 {
-    public class IngresosBLL
+    public class RolesBLL
     {
         public static bool Existe(string descripcion)
         {
@@ -19,7 +19,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
             try
             {
-                encontrado = contexto.Ingresos.Any(e => e.DescripcionIngreso.ToLower() == descripcion.ToLower());
+                encontrado = contexto.Roles.Any(e => e.Descripcion.ToLower() == descripcion.ToLower());
 
             }
             catch (Exception)
@@ -34,14 +34,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return encontrado;
         }
 
-        private static bool Insertar(Ingresos ingresos)
+        private static bool Insertar(Roles roles)
         {
             bool paso = false;
             var contexto = new Contexto();
 
             try
             {
-                contexto.Ingresos.Add(ingresos);
+                contexto.Roles.Add(roles);
                 paso = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -56,20 +56,20 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return paso;
         }
 
-        //Metodo para modificar los ingresos
-        private static bool Modificar(Ingresos ingresos)
+        //Metodo para modificar los roles
+        private static bool Modificar(Roles roles)
         {
             bool paso = false;
             Contexto contexto = new Contexto();
 
             try
             {
-                contexto.Database.ExecuteSqlRaw($"DELETE FROM IngresosDetalle Where IngresoId = {ingresos.IngresoId}");
-                foreach (var anterior in ingresos.IngresosDetalle)
+                contexto.Database.ExecuteSqlRaw($"DELETE FROM RolesDetalle Where RolId = {roles.RolId}");
+                foreach (var anterior in roles.RolesDetalle)
                 {
                     contexto.Entry(anterior).State = EntityState.Added;
                 }
-                contexto.Entry(ingresos).State = EntityState.Modified;
+                contexto.Entry(roles).State = EntityState.Modified;
                 paso = (contexto.SaveChanges() > 0);
             }
             catch (Exception)
@@ -85,12 +85,12 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
         }
 
-        public static bool Guardar(Ingresos ingresos)
+        public static bool Guardar(Roles roles)
         {
-            if (!Existe(ingresos.DescripcionIngreso))
-                return Insertar(ingresos);
+            if (!Existe(roles.Descripcion))
+                return Insertar(roles);
             else
-                return Modificar(ingresos);
+                return Modificar(roles);
         }
 
         public static bool Eliminar(int id)
@@ -100,7 +100,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
             try
             {
-                var eliminar = contexto.Ingresos.Find(id);
+                var eliminar = contexto.Roles.Find(id);
                 contexto.Entry(eliminar).State = EntityState.Deleted;
 
                 paso = (contexto.SaveChanges() > 0);
@@ -117,14 +117,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return paso;
         }
 
-        public static Ingresos Buscar(int id)
+        public static Roles Buscar(int id)
         {
             var contexto = new Contexto();
-            var ingresos = new Ingresos();
+            var roles = new Roles();
 
             try
             {
-                ingresos = contexto.Ingresos.Include(x => x.IngresosDetalle).Where(p => p.IngresoId == id).SingleOrDefault();
+                roles = contexto.Roles.Include(x => x.RolesDetalle).Where(p => p.RolId == id).SingleOrDefault();
             }
             catch (Exception)
             {
@@ -135,17 +135,17 @@ namespace FinanzasPersonalesProyectoFinal.BLL
                 contexto.Dispose();
             }
 
-            return ingresos;
+            return roles;
         }
 
-        public static List<Ingresos> GetList(Expression<Func<Ingresos, bool>> criterio)
+        public static List<Roles> GetList(Expression<Func<Roles, bool>> criterio)
         {
-            List<Ingresos> lista = new List<Ingresos>();
+            List<Roles> lista = new List<Roles>();
             Contexto contexto = new Contexto();
             try
             {
                 //Obtenemos la lista y la filtramos segun el criterio recibido por parametro
-                lista = contexto.Ingresos.Where(criterio).ToList();
+                lista = contexto.Roles.Where(criterio).ToList();
             }
             catch (Exception)
             {
@@ -158,14 +158,14 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return lista;
         }
 
-        public static List<Ingresos> GetIngreso()
+        public static List<Roles> GetRoles()
         {
-            List<Ingresos> lista = new List<Ingresos>();
+            List<Roles> lista = new List<Roles>();
             Contexto contexto = new Contexto();
 
             try
             {
-                lista = contexto.Ingresos.ToList();
+                lista = contexto.Roles.ToList();
             }
             catch (Exception)
             {
