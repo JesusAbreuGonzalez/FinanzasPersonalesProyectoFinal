@@ -12,7 +12,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 {
     public class CategoriasBLL
     { 
-        public static bool ExisteCategoria(string nombre)
+        public static bool Existe(string nombre)
         {
             bool encontrado = false;
             Contexto contexto = new Contexto();
@@ -79,7 +79,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
         public static bool Guardar(Categorias categorias)
         {
-            if (!ExisteCategoria(categorias.NombreCategoria))
+            if (!Existe(categorias.NombreCategoria))
                 return Insertar(categorias);
             else
                 return Modificar(categorias);

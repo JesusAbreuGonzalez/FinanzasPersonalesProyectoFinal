@@ -12,7 +12,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 {
     public class GastosBLL
     {
-        public static bool ExisteGasto(string descripcion)
+        public static bool Existe(string descripcion)
         {
             bool encontrado = false;
             var contexto = new Contexto();
@@ -87,7 +87,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
         public static bool Guardar(Gastos gastos)
         {
-            if (!ExisteGasto(gastos.DescripcionGasto))
+            if (!Existe(gastos.DescripcionGasto))
                 return Insertar(gastos);
             else
                 return Modificar(gastos);

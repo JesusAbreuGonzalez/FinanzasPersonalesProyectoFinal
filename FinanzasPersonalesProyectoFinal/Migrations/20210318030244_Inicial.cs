@@ -150,9 +150,8 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                 {
                     IngresoId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    FechaIngreso = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    MontoIgreso = table.Column<double>(type: "REAL", nullable: false),
-                    PresupuestoId = table.Column<int>(type: "INTEGER", nullable: false)
+                    PresupuestoId = table.Column<int>(type: "INTEGER", nullable: false),
+                    DescripcionIngreso = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -193,7 +192,8 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                     DetalleId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     IngresoId = table.Column<int>(type: "INTEGER", nullable: false),
-                    DescipcionIngreso = table.Column<string>(type: "TEXT", nullable: true)
+                    FechaIngreso = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    MontoIgreso = table.Column<double>(type: "REAL", nullable: false)
                 },
                 constraints: table =>
                 {

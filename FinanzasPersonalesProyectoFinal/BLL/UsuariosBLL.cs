@@ -12,7 +12,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 {
     public class UsuariosBLL
     {
-        public static bool ExisteAlias(string alias)
+        public static bool Existe(string alias)
         {
             bool encontrado = false;
             Contexto contexto = new Contexto();
@@ -79,7 +79,7 @@ namespace FinanzasPersonalesProyectoFinal.BLL
 
         public static bool Guardar(Usuarios usuarios)
         {
-            if (!ExisteAlias(usuarios.Alias))
+            if (!Existe(usuarios.Alias))
                 return Insertar(usuarios);
             else
                 return Modificar(usuarios);

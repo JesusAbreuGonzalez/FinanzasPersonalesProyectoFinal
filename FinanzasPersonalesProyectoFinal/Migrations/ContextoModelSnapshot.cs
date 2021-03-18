@@ -114,11 +114,8 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("FechaIngreso")
+                    b.Property<string>("DescripcionIngreso")
                         .HasColumnType("TEXT");
-
-                    b.Property<double>("MontoIgreso")
-                        .HasColumnType("REAL");
 
                     b.Property<int>("PresupuestoId")
                         .HasColumnType("INTEGER");
@@ -136,11 +133,14 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("DescipcionIngreso")
+                    b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("IngresoId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<double>("MontoIgreso")
+                        .HasColumnType("REAL");
 
                     b.HasKey("DetalleId");
 
