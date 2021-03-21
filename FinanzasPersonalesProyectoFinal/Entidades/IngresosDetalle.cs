@@ -13,14 +13,14 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         public int DetalleId { get; set; }
         public int IngresoId { get; set; }
         public DateTime FechaIngreso { get; set; }
-        public double MontoIgreso { get; set; }
+        public double MontoIngreso { get; set; }
 
         public IngresosDetalle()
         {
             DetalleId = 0;
             IngresoId = 0;
             FechaIngreso = DateTime.Now;
-            MontoIgreso = 0;
+            MontoIngreso = 0;
         }
 
     }
