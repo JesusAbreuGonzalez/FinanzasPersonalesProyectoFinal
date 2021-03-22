@@ -249,6 +249,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "rGastos";
             this.Text = "Registro de Gastos";
+            this.Load += new System.EventHandler(this.rGastos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GastosErrorProvider)).EndInit();
             this.DetalleGastosGroupBox.ResumeLayout(false);
             this.DetalleGastosGroupBox.PerformLayout();

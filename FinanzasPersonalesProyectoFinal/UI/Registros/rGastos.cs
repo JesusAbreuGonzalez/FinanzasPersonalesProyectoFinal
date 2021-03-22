@@ -52,7 +52,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             LlenarGrid();
         }
 
-        private Gastos LlenaClases()
+        private Gastos LlenaClase()
         {
             Gastos gastos = new Gastos();
 
@@ -136,7 +136,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             if (!Validar())
                 return;
 
-            gastos = LlenaClases();
+            gastos = LlenaClase();
             var paso = GastosBLL.Guardar(gastos);
 
             if (paso)
@@ -161,6 +161,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             else
                 GastosErrorProvider.SetError(GastoIdNumericUpDown, "Este Id no existe en la base de datos");
 
+        }
+
+        private void rGastos_Load(object sender, EventArgs e)
+        {
+            PresupuestoIdComboBox.DataSource = PresupuestosBLL.GetPresupuestos();
+            PresupuestoIdComboBox.DisplayMember = "NombrePresupuesto";
+            PresupuestoIdComboBox.ValueMember = "PresupuestoId";
         }
     }
 }

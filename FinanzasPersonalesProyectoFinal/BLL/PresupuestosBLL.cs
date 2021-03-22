@@ -151,5 +151,27 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             }
             return lista;
         }
+
+        public static List<Presupuestos> GetPresupuestos()
+        {
+            List<Presupuestos> lista = new List<Presupuestos>();
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                lista = contexto.Presupuestos.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
     }
 }
