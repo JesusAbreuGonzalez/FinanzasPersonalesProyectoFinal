@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DATA\" />
     <Folder Include="UI\Consultas\" />
   </ItemGroup>
 
@@ -32,6 +33,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DATA\GestionFinanzas.Db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

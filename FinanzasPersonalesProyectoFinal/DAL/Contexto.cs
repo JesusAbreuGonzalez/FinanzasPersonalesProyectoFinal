@@ -40,6 +40,12 @@ namespace FinanzasPersonalesProyectoFinal.DAL
                 new Categorias() { CategoriaId = 5, NombreCategoria = "Ropa"},
                 new Categorias() { CategoriaId = 6, NombreCategoria = "Vivienda"}
             );
+
+            modelBuilder.Entity<Permisos>().HasData(
+                new Permisos() { PermisoId = 1, Descripcion = "Agrega o Modifica"},
+                new Permisos() { PermisoId = 2, Descripcion = "Consulta"},
+                new Permisos() { PermisoId = 3, Descripcion = "Elimina"}
+            );
         }
     }
 }

@@ -147,12 +147,15 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.ClaveTextBox.Location = new System.Drawing.Point(418, 101);
             this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(228, 23);
             this.ClaveTextBox.TabIndex = 10;
             // 
             // ActivoCheckBox
             // 
             this.ActivoCheckBox.AutoSize = true;
+            this.ActivoCheckBox.Checked = true;
+            this.ActivoCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ActivoCheckBox.Location = new System.Drawing.Point(586, 20);
             this.ActivoCheckBox.Name = "ActivoCheckBox";
             this.ActivoCheckBox.Size = new System.Drawing.Size(60, 19);
@@ -169,6 +172,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.BuscarButton.Size = new System.Drawing.Size(56, 24);
             this.BuscarButton.TabIndex = 13;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NuevoButton
             // 
@@ -182,6 +186,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GuardarButton
             // 
@@ -195,6 +200,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // EliminarButton
             // 
@@ -208,11 +214,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // ConfirmarClaveTextBox
             // 
             this.ConfirmarClaveTextBox.Location = new System.Drawing.Point(418, 144);
             this.ConfirmarClaveTextBox.Name = "ConfirmarClaveTextBox";
+            this.ConfirmarClaveTextBox.PasswordChar = '*';
             this.ConfirmarClaveTextBox.Size = new System.Drawing.Size(228, 23);
             this.ConfirmarClaveTextBox.TabIndex = 17;
             // 
@@ -228,6 +236,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // RolesComboBox
             // 
+            this.RolesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RolesComboBox.FormattingEnabled = true;
             this.RolesComboBox.Location = new System.Drawing.Point(418, 58);
             this.RolesComboBox.Name = "RolesComboBox";
@@ -264,6 +273,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.UsuarioIdLabel);
             this.Name = "rUsuarios";
             this.Text = "Registro de Usuarios";
+            this.Load += new System.EventHandler(this.rUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosIdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosErrorProvider)).EndInit();
             this.ResumeLayout(false);

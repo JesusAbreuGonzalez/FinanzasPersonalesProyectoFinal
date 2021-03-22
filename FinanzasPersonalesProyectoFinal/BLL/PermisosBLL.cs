@@ -151,5 +151,27 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             }
             return lista;
         }
+
+        public static List<Permisos> GetPermisos()
+        {
+            List<Permisos> lista = new List<Permisos>();
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                lista = contexto.Permisos.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
     }
 }

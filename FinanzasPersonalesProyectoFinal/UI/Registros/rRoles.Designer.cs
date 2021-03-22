@@ -29,6 +29,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rRoles));
             this.ActivoCheckBox = new System.Windows.Forms.CheckBox();
             this.RolIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -36,19 +37,21 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.DescripcionLabel = new System.Windows.Forms.Label();
             this.RolIdLabel = new System.Windows.Forms.Label();
             this.DetalleGroupBox = new System.Windows.Forms.GroupBox();
+            this.RemoverButton = new System.Windows.Forms.Button();
+            this.AgregarButton = new System.Windows.Forms.Button();
             this.RolDataGridView = new System.Windows.Forms.DataGridView();
             this.AsignadoCheckBox = new System.Windows.Forms.CheckBox();
             this.PermisoIdComboBox = new System.Windows.Forms.ComboBox();
             this.PermisoIdLabel = new System.Windows.Forms.Label();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.AgregarButton = new System.Windows.Forms.Button();
-            this.RemoverButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
+            this.RolesErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.RolIdNumericUpDown)).BeginInit();
             this.DetalleGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RolDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolesErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // ActivoCheckBox
@@ -113,6 +116,33 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.DetalleGroupBox.TabStop = false;
             this.DetalleGroupBox.Text = "Detalle de Roles";
             // 
+            // RemoverButton
+            // 
+            this.RemoverButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RemoverButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoverButton.Image")));
+            this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoverButton.Location = new System.Drawing.Point(428, 34);
+            this.RemoverButton.Name = "RemoverButton";
+            this.RemoverButton.Size = new System.Drawing.Size(103, 26);
+            this.RemoverButton.TabIndex = 9;
+            this.RemoverButton.Text = "Remover";
+            this.RemoverButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoverButton.UseVisualStyleBackColor = true;
+            this.RemoverButton.Click += new System.EventHandler(this.RemoverButton_Click);
+            // 
+            // AgregarButton
+            // 
+            this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
+            this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AgregarButton.Location = new System.Drawing.Point(313, 34);
+            this.AgregarButton.Name = "AgregarButton";
+            this.AgregarButton.Size = new System.Drawing.Size(103, 26);
+            this.AgregarButton.TabIndex = 8;
+            this.AgregarButton.Text = "Agregar";
+            this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AgregarButton.UseVisualStyleBackColor = true;
+            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
+            // 
             // RolDataGridView
             // 
             this.RolDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -134,6 +164,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // PermisoIdComboBox
             // 
+            this.PermisoIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PermisoIdComboBox.FormattingEnabled = true;
             this.PermisoIdComboBox.Location = new System.Drawing.Point(82, 35);
             this.PermisoIdComboBox.Name = "PermisoIdComboBox";
@@ -157,31 +188,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.BuscarButton.Size = new System.Drawing.Size(61, 29);
             this.BuscarButton.TabIndex = 28;
             this.BuscarButton.UseVisualStyleBackColor = true;
-            // 
-            // AgregarButton
-            // 
-            this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
-            this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AgregarButton.Location = new System.Drawing.Point(313, 34);
-            this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(103, 26);
-            this.AgregarButton.TabIndex = 8;
-            this.AgregarButton.Text = "Agregar";
-            this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AgregarButton.UseVisualStyleBackColor = true;
-            // 
-            // RemoverButton
-            // 
-            this.RemoverButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RemoverButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoverButton.Image")));
-            this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoverButton.Location = new System.Drawing.Point(428, 34);
-            this.RemoverButton.Name = "RemoverButton";
-            this.RemoverButton.Size = new System.Drawing.Size(103, 26);
-            this.RemoverButton.TabIndex = 9;
-            this.RemoverButton.Text = "Remover";
-            this.RemoverButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RemoverButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // EliminarButton
             // 
@@ -195,6 +202,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
@@ -208,6 +216,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // NuevoButton
             // 
@@ -221,6 +230,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
+            // 
+            // RolesErrorProvider
+            // 
+            this.RolesErrorProvider.ContainerControl = this;
             // 
             // rRoles
             // 
@@ -239,10 +253,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.RolIdLabel);
             this.Name = "rRoles";
             this.Text = "Registro de Roles";
+            this.Load += new System.EventHandler(this.rRoles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RolIdNumericUpDown)).EndInit();
             this.DetalleGroupBox.ResumeLayout(false);
             this.DetalleGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RolDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RolesErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +282,6 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.ErrorProvider RolesErrorProvider;
     }
 }

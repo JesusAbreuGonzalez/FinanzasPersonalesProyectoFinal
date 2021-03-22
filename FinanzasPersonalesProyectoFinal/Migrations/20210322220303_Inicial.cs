@@ -48,7 +48,8 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                     Nombres = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
                     Clave = table.Column<string>(type: "TEXT", nullable: true),
-                    Activo = table.Column<bool>(type: "INTEGER", nullable: false)
+                    Activo = table.Column<bool>(type: "INTEGER", nullable: false),
+                    RolId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -193,7 +194,7 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     IngresoId = table.Column<int>(type: "INTEGER", nullable: false),
                     FechaIngreso = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    MontoIgreso = table.Column<double>(type: "REAL", nullable: false)
+                    MontoIngreso = table.Column<double>(type: "REAL", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -235,6 +236,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "NombreCategoria", "UsuarioId" },
                 values: new object[] { 6, "Vivienda", null });
+
+            migrationBuilder.InsertData(
+                table: "Permisos",
+                columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
+                values: new object[] { 1, "Agrega o Modifica", new DateTime(2021, 3, 22, 18, 3, 2, 949, DateTimeKind.Local).AddTicks(2479), 0 });
+
+            migrationBuilder.InsertData(
+                table: "Permisos",
+                columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
+                values: new object[] { 2, "Consulta", new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1683), 0 });
+
+            migrationBuilder.InsertData(
+                table: "Permisos",
+                columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
+                values: new object[] { 3, "Elimina", new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1725), 0 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Categorias_UsuarioId",

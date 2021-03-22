@@ -29,6 +29,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rPresupuestos));
             this.BuscarButton = new System.Windows.Forms.Button();
             this.NombresTextBox = new System.Windows.Forms.TextBox();
@@ -42,7 +43,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
+            this.RegistroPresupuestosErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PresupuestosIdNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistroPresupuestosErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // BuscarButton
@@ -54,6 +57,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.BuscarButton.Size = new System.Drawing.Size(56, 24);
             this.BuscarButton.TabIndex = 22;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NombresTextBox
             // 
@@ -85,9 +89,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NombresLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NombresLabel.Location = new System.Drawing.Point(14, 58);
             this.NombresLabel.Name = "NombresLabel";
-            this.NombresLabel.Size = new System.Drawing.Size(63, 17);
+            this.NombresLabel.Size = new System.Drawing.Size(57, 17);
             this.NombresLabel.TabIndex = 17;
-            this.NombresLabel.Text = "Nombres";
+            this.NombresLabel.Text = "Nombre";
             // 
             // MontoLabel
             // 
@@ -118,6 +122,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // CategoriasComboBox
             // 
+            this.CategoriasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriasComboBox.FormattingEnabled = true;
             this.CategoriasComboBox.Location = new System.Drawing.Point(91, 141);
             this.CategoriasComboBox.Name = "CategoriasComboBox";
@@ -136,6 +141,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
@@ -149,6 +155,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // NuevoButton
             // 
@@ -162,6 +169,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
+            // 
+            // RegistroPresupuestosErrorProvider
+            // 
+            this.RegistroPresupuestosErrorProvider.ContainerControl = this;
             // 
             // rPresupuestos
             // 
@@ -182,7 +194,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.UsuarioIdLabel);
             this.Name = "rPresupuestos";
             this.Text = "Registro de Presupuestos";
+            this.Load += new System.EventHandler(this.rPresupuestos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PresupuestosIdNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistroPresupuestosErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +216,6 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.ErrorProvider RegistroPresupuestosErrorProvider;
     }
 }

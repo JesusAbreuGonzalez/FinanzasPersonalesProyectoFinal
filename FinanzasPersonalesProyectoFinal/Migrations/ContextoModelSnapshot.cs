@@ -167,6 +167,29 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                     b.HasKey("PermisoId");
 
                     b.ToTable("Permisos");
+
+                    b.HasData(
+                        new
+                        {
+                            PermisoId = 1,
+                            Descripcion = "Agrega o Modifica",
+                            FechaCreacion = new DateTime(2021, 3, 22, 18, 3, 2, 949, DateTimeKind.Local).AddTicks(2479),
+                            VecesAsignado = 0
+                        },
+                        new
+                        {
+                            PermisoId = 2,
+                            Descripcion = "Consulta",
+                            FechaCreacion = new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1683),
+                            VecesAsignado = 0
+                        },
+                        new
+                        {
+                            PermisoId = 3,
+                            Descripcion = "Elimina",
+                            FechaCreacion = new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1725),
+                            VecesAsignado = 0
+                        });
                 });
 
             modelBuilder.Entity("FinanzasPersonalesProyectoFinal.Entidades.Presupuestos", b =>
@@ -261,6 +284,9 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
 
                     b.Property<string>("Nombres")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("RolId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("UsuarioId");
 

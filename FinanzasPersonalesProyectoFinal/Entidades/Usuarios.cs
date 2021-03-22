@@ -18,6 +18,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         public string Email { get; set; }
         public string Clave { get; set; }
         public bool Activo { get; set; }
+        public int RolId { get; set; }
 
         public Usuarios()
         {
@@ -28,6 +29,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
             Email = string.Empty;
             Clave = string.Empty;
             Activo = false;
+            RolId = 0;
             Categorias = new List<Categorias>();
         }
 

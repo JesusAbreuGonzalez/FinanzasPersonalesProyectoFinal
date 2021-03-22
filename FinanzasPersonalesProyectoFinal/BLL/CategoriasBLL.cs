@@ -152,5 +152,27 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             }
             return lista;
         }
+
+        public static List<Categorias> GetCategorias()
+        {
+            List<Categorias> lista = new List<Categorias>();
+            Contexto contexto = new Contexto();
+
+            try
+            {
+                lista = contexto.Categorias.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+
+            return lista;
+        }
     }
 }
