@@ -64,7 +64,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.IdGastosLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IdGastosLabel.Location = new System.Drawing.Point(20, 9);
             this.IdGastosLabel.Name = "IdGastosLabel";
-            this.IdGastosLabel.Size = new System.Drawing.Size(19, 17);
+            this.IdGastosLabel.Size = new System.Drawing.Size(25, 23);
             this.IdGastosLabel.TabIndex = 0;
             this.IdGastosLabel.Text = "Id";
             // 
@@ -74,7 +74,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.DescripcionLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DescripcionLabel.Location = new System.Drawing.Point(18, 64);
             this.DescripcionLabel.Name = "DescripcionLabel";
-            this.DescripcionLabel.Size = new System.Drawing.Size(76, 17);
+            this.DescripcionLabel.Size = new System.Drawing.Size(98, 23);
             this.DescripcionLabel.TabIndex = 1;
             this.DescripcionLabel.Text = "Descripción";
             // 
@@ -84,7 +84,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.PresupuestoLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PresupuestoLabel.Location = new System.Drawing.Point(292, 64);
             this.PresupuestoLabel.Name = "PresupuestoLabel";
-            this.PresupuestoLabel.Size = new System.Drawing.Size(80, 17);
+            this.PresupuestoLabel.Size = new System.Drawing.Size(104, 23);
             this.PresupuestoLabel.TabIndex = 2;
             this.PresupuestoLabel.Text = "Presupuesto";
             // 
@@ -134,6 +134,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GastosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GastosDataGridView.Location = new System.Drawing.Point(6, 75);
             this.GastosDataGridView.Name = "GastosDataGridView";
+            this.GastosDataGridView.RowHeadersWidth = 51;
             this.GastosDataGridView.RowTemplate.Height = 25;
             this.GastosDataGridView.Size = new System.Drawing.Size(505, 220);
             this.GastosDataGridView.TabIndex = 6;
@@ -142,7 +143,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.MontoTextBox.Location = new System.Drawing.Point(6, 41);
             this.MontoTextBox.Name = "MontoTextBox";
-            this.MontoTextBox.Size = new System.Drawing.Size(261, 25);
+            this.MontoTextBox.Size = new System.Drawing.Size(261, 29);
             this.MontoTextBox.TabIndex = 5;
             // 
             // MontoLabel
@@ -151,7 +152,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.MontoLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MontoLabel.Location = new System.Drawing.Point(6, 21);
             this.MontoLabel.Name = "MontoLabel";
-            this.MontoLabel.Size = new System.Drawing.Size(47, 17);
+            this.MontoLabel.Size = new System.Drawing.Size(61, 23);
             this.MontoLabel.TabIndex = 3;
             this.MontoLabel.Text = "Monto";
             // 
@@ -159,14 +160,14 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.GastoIdNumericUpDown.Location = new System.Drawing.Point(20, 30);
             this.GastoIdNumericUpDown.Name = "GastoIdNumericUpDown";
-            this.GastoIdNumericUpDown.Size = new System.Drawing.Size(192, 25);
+            this.GastoIdNumericUpDown.Size = new System.Drawing.Size(192, 29);
             this.GastoIdNumericUpDown.TabIndex = 4;
             // 
             // DescipcionTextBox
             // 
             this.DescipcionTextBox.Location = new System.Drawing.Point(18, 84);
             this.DescipcionTextBox.Name = "DescipcionTextBox";
-            this.DescipcionTextBox.Size = new System.Drawing.Size(261, 25);
+            this.DescipcionTextBox.Size = new System.Drawing.Size(261, 29);
             this.DescipcionTextBox.TabIndex = 5;
             // 
             // PresupuestoIdComboBox
@@ -174,7 +175,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.PresupuestoIdComboBox.FormattingEnabled = true;
             this.PresupuestoIdComboBox.Location = new System.Drawing.Point(292, 84);
             this.PresupuestoIdComboBox.Name = "PresupuestoIdComboBox";
-            this.PresupuestoIdComboBox.Size = new System.Drawing.Size(231, 25);
+            this.PresupuestoIdComboBox.Size = new System.Drawing.Size(231, 29);
             this.PresupuestoIdComboBox.TabIndex = 6;
             // 
             // BuscarButton
@@ -231,7 +232,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // rGastos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 477);
             this.Controls.Add(this.EliminarButton);

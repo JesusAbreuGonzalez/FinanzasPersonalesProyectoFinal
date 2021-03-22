@@ -20,6 +20,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         public rGastos()
         {
             InitializeComponent();
+            this.gastosDetalle = new List<GastosDetalle>();
         }
 
         private void LlenarGrid()

@@ -12,13 +12,10 @@ namespace FinanzasPersonalesProyectoFinal.DAL
     {
         public DbSet<Categorias> Categorias { get; set; }
         public DbSet<Gastos> Gastos { get; set; }
-        public DbSet<GastosDetalle> GastosDetalle { get; set; }
         public DbSet<Ingresos> Ingresos { get; set; }
-        public DbSet<IngresosDetalle> IngresosDetalle { get; set; }
         public DbSet<Permisos> Permisos { get; set; }
         public DbSet<Presupuestos> Presupuestos { get; set; }
         public DbSet<Roles> Roles { get; set; }
-        public DbSet<RolesDetalle> RolesDetalle { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
 
                  

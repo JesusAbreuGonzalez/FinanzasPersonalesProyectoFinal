@@ -16,5 +16,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         {
             InitializeComponent();
         }
+
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
