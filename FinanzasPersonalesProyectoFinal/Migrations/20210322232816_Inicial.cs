@@ -240,17 +240,17 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 1, "Agrega o Modifica", new DateTime(2021, 3, 22, 18, 3, 2, 949, DateTimeKind.Local).AddTicks(2479), 0 });
+                values: new object[] { 1, "Agrega o Modifica", new DateTime(2021, 3, 22, 19, 28, 16, 129, DateTimeKind.Local).AddTicks(5881), 0 });
 
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 2, "Consulta", new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1683), 0 });
+                values: new object[] { 2, "Consulta", new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1893), 0 });
 
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 3, "Elimina", new DateTime(2021, 3, 22, 18, 3, 2, 952, DateTimeKind.Local).AddTicks(1725), 0 });
+                values: new object[] { 3, "Elimina", new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1912), 0 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Categorias_UsuarioId",

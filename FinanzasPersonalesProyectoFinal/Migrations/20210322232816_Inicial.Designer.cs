@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinanzasPersonalesProyectoFinal.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210322225224_Eliminando Detalle del Contexto")]
-    partial class EliminandoDetalledelContexto
+    [Migration("20210322232816_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -175,21 +175,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         {
                             PermisoId = 1,
                             Descripcion = "Agrega o Modifica",
-                            FechaCreacion = new DateTime(2021, 3, 22, 18, 52, 23, 66, DateTimeKind.Local).AddTicks(1094),
+                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 129, DateTimeKind.Local).AddTicks(5881),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 2,
                             Descripcion = "Consulta",
-                            FechaCreacion = new DateTime(2021, 3, 22, 18, 52, 23, 68, DateTimeKind.Local).AddTicks(349),
+                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1893),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 3,
                             Descripcion = "Elimina",
-                            FechaCreacion = new DateTime(2021, 3, 22, 18, 52, 23, 68, DateTimeKind.Local).AddTicks(378),
+                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1912),
                             VecesAsignado = 0
                         });
                 });
