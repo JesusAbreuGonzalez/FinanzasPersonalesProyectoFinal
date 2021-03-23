@@ -13,12 +13,14 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         [Key]
         public int CategoriaId { get; set; }
         public string NombreCategoria { get; set; }
+        public DateTime FechaCreacion { get; set; }
 
         public Categorias()
         {
             CategoriaId = 0;
             NombreCategoria = string.Empty;
-            Presupuestos = new List<Presupuestos>();
+            FechaCreacion = DateTime.Now;
+            Presupuestos = new List<Presupuestos>();            
         }
 
         [ForeignKey("CategoriaId")]

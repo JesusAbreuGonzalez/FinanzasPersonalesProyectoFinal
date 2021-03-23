@@ -36,13 +36,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value));
@@ -65,13 +65,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text));
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()));
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text));
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()));
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text));
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()));
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text));
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text));
@@ -100,13 +100,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && r.Activo);
@@ -129,13 +129,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text) && r.Activo);
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text) && r.Activo);
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text) && r.Activo);
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()) && r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text) && r.Activo);
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text) && r.Activo);
@@ -164,13 +164,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaIngreso >= DesdeDateTimePicker.Value || r.FechaIngreso <= HastaDateTimePicker.Value) && !r.Activo);
@@ -193,13 +193,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 lista = UsuariosBLL.GetList(r => r.UsuarioId == Utilidades.ToInt(CriterioTextBox.Text) && !r.Activo);
                                 break;
                             case 1: //Alias
-                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text.ToUpper()) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Alias.Contains(CriterioTextBox.Text) && !r.Activo);
                                 break;
                             case 2: //Nombres
-                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text.ToUpper()) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Nombres.Contains(CriterioTextBox.Text) && !r.Activo);
                                 break;
                             case 3: //Email
-                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text.ToUpper()) && !r.Activo);
+                                lista = UsuariosBLL.GetList(r => r.Email.Contains(CriterioTextBox.Text) && !r.Activo);
                                 break;
                             case 4: //RolId
                                 lista = UsuariosBLL.GetList(r => r.RolId == Utilidades.ToInt(CriterioTextBox.Text) && !r.Activo);
