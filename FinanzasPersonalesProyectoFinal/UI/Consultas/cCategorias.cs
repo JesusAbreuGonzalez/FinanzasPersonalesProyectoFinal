@@ -37,7 +37,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 break;
                         }
                     }
-                    //En caso de que no haya nada en el textBox, se imprimirán todos los usuarios
+                    //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
                     else
                         lista = CategoriasBLL.GetList(r => true);
                 }
@@ -55,7 +55,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                                 break;
                         }
                     }
-                    //En caso de que no haya nada en el textBox, se imprimirán todos los usuarios
+                    //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
                     else
                         lista = CategoriasBLL.GetList(r => true);
                 }
