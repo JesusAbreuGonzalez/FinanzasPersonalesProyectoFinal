@@ -114,7 +114,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
                 {
                     RolId = (int)RolIdNumericUpDown.Value,
                     PermisoId = PermisoIdComboBox.SelectedIndex + 1,
-                    EsAsignado = ActivoCheckBox.Checked
+                    EsAsignado = AsignadoCheckBox.Checked
                 }
             );
 
