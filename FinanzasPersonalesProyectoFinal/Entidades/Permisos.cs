@@ -22,6 +22,7 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
             FechaCreacion = DateTime.Now;
             Descripcion = string.Empty;
             VecesAsignado = 0;
+            RolesDetalle = new List<RolesDetalle>();
         }
 
         [ForeignKey("PermisoId")]

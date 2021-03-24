@@ -113,7 +113,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
                 new RolesDetalle()
                 {
                     RolId = (int)RolIdNumericUpDown.Value,
-                    PermisoId = Convert.ToInt32(PermisoIdComboBox.Text),
+                    PermisoId = PermisoIdComboBox.SelectedIndex + 1,
                     EsAsignado = ActivoCheckBox.Checked
                 }
             );
@@ -173,7 +173,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         private void rRoles_Load(object sender, EventArgs e)
         {
             PermisoIdComboBox.DataSource = PermisosBLL.GetPermisos();
-            PermisoIdComboBox.DisplayMember = "PermisoId";
+            PermisoIdComboBox.DisplayMember = "Descripcion";
             PermisoIdComboBox.ValueMember = "PermisoId";
         }
 
