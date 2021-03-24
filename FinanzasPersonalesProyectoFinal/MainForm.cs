@@ -1,4 +1,5 @@
-﻿using FinanzasPersonalesProyectoFinal.UI.Registros;
+﻿using FinanzasPersonalesProyectoFinal.UI.Consultas;
+using FinanzasPersonalesProyectoFinal.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,8 +26,25 @@ namespace FinanzasPersonalesProyectoFinal
             this.RegistroIngresosToolStripMenuItem.Click += new EventHandler(this.RegistroIngresosToolStripMenuItem_ItemClicked);
 
             //Consultas
+            this.ConsultaUsuariosToolStripMenuItem.Click += new EventHandler(this.ConsultaUsuariosToolStripMenuItem_ItemClicked);
+            this.ConsultaCategoriasToolStripMenuItem.Click += new EventHandler(this.ConsultaCategoriasToolStripMenuItem_ItemClicked);
         }
 
+        private void ConsultaCategoriasToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var categorias = new cCategorias();
+            categorias.MdiParent = this;
+            categorias.Show();
+        }
+
+        private void ConsultaUsuariosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var usuarios = new cUsuarios();
+            usuarios.MdiParent = this;
+            usuarios.Show();
+        }
+
+        //Eventos registros
         private void RegistroIngresosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
         {
             var ingresos = new rIngresos();

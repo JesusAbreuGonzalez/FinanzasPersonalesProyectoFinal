@@ -30,16 +30,16 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                         switch (FiltroComboBox.SelectedIndex)
                         {
                             case 0: //CategoriaId
-                                lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value || r.FechaCreacion <= HastaDateTimePicker.Value));
+                                lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
                                 break;
                             case 1: //NombreCategoria
-                                lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value || r.FechaCreacion <= HastaDateTimePicker.Value));
+                                lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
                                 break;
                         }
                     }
                     //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
                     else
-                        lista = CategoriasBLL.GetList(r => true);
+                        lista = CategoriasBLL.GetList(r => (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
                 }
                 else
                 {

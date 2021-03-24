@@ -182,6 +182,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // FiltroComboBox
             // 
             this.FiltroComboBox.FormattingEnabled = true;
+            this.FiltroComboBox.Items.AddRange(new object[] {
+            "Id",
+            "Alias",
+            "Nombre",
+            "Email",
+            "Rol id"});
             this.FiltroComboBox.Location = new System.Drawing.Point(61, 74);
             this.FiltroComboBox.Name = "FiltroComboBox";
             this.FiltroComboBox.Size = new System.Drawing.Size(121, 28);

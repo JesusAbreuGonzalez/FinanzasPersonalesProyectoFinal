@@ -22,6 +22,9 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("NombreCategoria")
                         .HasColumnType("TEXT");
 
@@ -38,31 +41,37 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         new
                         {
                             CategoriaId = 1,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 825, DateTimeKind.Local).AddTicks(3050),
                             NombreCategoria = "Alimentación"
                         },
                         new
                         {
                             CategoriaId = 2,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3595),
                             NombreCategoria = "Educación"
                         },
                         new
                         {
                             CategoriaId = 3,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3617),
                             NombreCategoria = "Entretenimiento"
                         },
                         new
                         {
                             CategoriaId = 4,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3620),
                             NombreCategoria = "Pagos"
                         },
                         new
                         {
                             CategoriaId = 5,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3622),
                             NombreCategoria = "Ropa"
                         },
                         new
                         {
                             CategoriaId = 6,
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3624),
                             NombreCategoria = "Vivienda"
                         });
                 });
@@ -173,21 +182,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         {
                             PermisoId = 1,
                             Descripcion = "Agrega o Modifica",
-                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 129, DateTimeKind.Local).AddTicks(5881),
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(7771),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 2,
                             Descripcion = "Consulta",
-                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1893),
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(9266),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 3,
                             Descripcion = "Elimina",
-                            FechaCreacion = new DateTime(2021, 3, 22, 19, 28, 16, 133, DateTimeKind.Local).AddTicks(1912),
+                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(9272),
                             VecesAsignado = 0
                         });
                 });
