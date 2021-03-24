@@ -99,9 +99,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // BuscarButton
             // 
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(214, 36);
+            this.BuscarButton.Location = new System.Drawing.Point(214, 34);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(61, 26);
+            this.BuscarButton.Size = new System.Drawing.Size(61, 25);
             this.BuscarButton.TabIndex = 30;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -124,7 +124,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // IngresosIdNumericUpDown
             // 
-            this.IngresosIdNumericUpDown.Location = new System.Drawing.Point(16, 36);
+            this.IngresosIdNumericUpDown.Location = new System.Drawing.Point(14, 36);
             this.IngresosIdNumericUpDown.Name = "IngresosIdNumericUpDown";
             this.IngresosIdNumericUpDown.Size = new System.Drawing.Size(192, 23);
             this.IngresosIdNumericUpDown.TabIndex = 27;
@@ -221,7 +221,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.IdGastosLabel.AutoSize = true;
             this.IdGastosLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IdGastosLabel.Location = new System.Drawing.Point(16, 15);
+            this.IdGastosLabel.Location = new System.Drawing.Point(14, 16);
             this.IdGastosLabel.Name = "IdGastosLabel";
             this.IdGastosLabel.Size = new System.Drawing.Size(19, 17);
             this.IdGastosLabel.TabIndex = 23;

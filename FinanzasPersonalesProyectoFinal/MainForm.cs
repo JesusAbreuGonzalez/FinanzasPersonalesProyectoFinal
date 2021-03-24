@@ -29,6 +29,30 @@ namespace FinanzasPersonalesProyectoFinal
             this.ConsultaUsuariosToolStripMenuItem.Click += new EventHandler(this.ConsultaUsuariosToolStripMenuItem_ItemClicked);
             this.ConsultaCategoriasToolStripMenuItem.Click += new EventHandler(this.ConsultaCategoriasToolStripMenuItem_ItemClicked);
             this.ConsultaGastosToolStripMenuItem.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
+            this.ConsultaIngresosToolStripMenuItem.Click += new EventHandler(this.ConsultaIngresosToolStripMenuItem_ItemClicked);
+            this.ConsultaPresupuestosToolStripMenuItem.Click += new EventHandler(this.ConsultaPresupuestosToolStripMenuItem_ItemClicked);
+            this.ConsultaRolesToolStripMenuItem.Click += new EventHandler(this.ConsultaRolesToolStripMenuItem_ItemClicked);
+        }
+
+        private void ConsultaRolesToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var roles = new cRoles();
+            roles.MdiParent = this;
+            roles.Show();
+        }
+
+        private void ConsultaPresupuestosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var presupuestos = new cPresupuestos();
+            presupuestos.MdiParent = this;
+            presupuestos.Show();
+        }
+
+        private void ConsultaIngresosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var ingresos = new cIngresos();
+            ingresos.MdiParent = this;
+            ingresos.Show();
         }
 
         private void ConsultaGastosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
