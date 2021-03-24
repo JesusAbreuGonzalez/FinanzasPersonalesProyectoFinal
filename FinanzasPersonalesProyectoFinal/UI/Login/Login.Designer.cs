@@ -29,6 +29,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.NombreCompletoTextBox = new System.Windows.Forms.TextBox();
             this.ClaveTextBox = new System.Windows.Forms.TextBox();
@@ -37,9 +38,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.ClavePictureBox = new System.Windows.Forms.PictureBox();
             this.TituloPictureBox = new System.Windows.Forms.PictureBox();
             this.LoginButton = new System.Windows.Forms.Button();
+            this.LoginErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CorreoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClavePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TituloPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // NombreCompletoTextBox
@@ -129,6 +132,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.LoginButton.TabIndex = 6;
             this.LoginButton.Text = "Entrar";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            // 
+            // LoginErrorProvider
+            // 
+            this.LoginErrorProvider.ContainerControl = this;
             // 
             // Login
             // 
@@ -153,6 +161,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             ((System.ComponentModel.ISupportInitialize)(this.CorreoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClavePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TituloPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +176,6 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
         private System.Windows.Forms.PictureBox ClavePictureBox;
         private System.Windows.Forms.PictureBox TituloPictureBox;
         private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.ErrorProvider LoginErrorProvider;
     }
 }

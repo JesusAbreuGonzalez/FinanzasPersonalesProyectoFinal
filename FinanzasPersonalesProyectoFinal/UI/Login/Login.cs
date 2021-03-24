@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinanzasPersonalesProyectoFinal.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,6 +72,21 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             {
                 NombreCompletoTextBox.Text = "Nombre Completo";
                 NombreCompletoTextBox.ForeColor = Color.Gray;
+            }
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            if (UsuariosBLL.ExisteNombre(NombreCompletoTextBox.Text, ClaveTextBox.Text))
+            {
+                var ventana = new MainForm();
+                ventana.Show();
+            }
+            else
+            {
+                LoginErrorProvider.SetError(NombreCompletoTextBox, "El usuario o la contraseña ingresadas son erroneos");
+                LoginErrorProvider.SetError(ClaveTextBox, "El usuario o la contraseña ingresadas son erroneos");
+                ClaveTextBox.Clear();
             }
         }
     }

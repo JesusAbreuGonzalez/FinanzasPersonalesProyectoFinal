@@ -33,6 +33,27 @@ namespace FinanzasPersonalesProyectoFinal.BLL
             return encontrado;
         }
 
+        public static bool ExisteNombre(string nombres, string clave)
+        {
+            bool encontrado = false;
+            var contexto = new Contexto();
+
+            try
+            {
+                encontrado = contexto.Usuarios.Any(e => e.Nombres == nombres && e.Clave == Utilidades.GetSHA256(clave));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
+
         private static bool Insertar(Usuarios usuarios)
         {
             bool paso = false;

@@ -50,7 +50,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             usuarios.Alias = AliasTextBox.Text;
             usuarios.Nombres = NombresTextBox.Text;
             usuarios.Email = EmailTextBox.Text;
-            usuarios.Clave = ClaveTextBox.Text;
+            usuarios.Clave = Utilidades.GetSHA256(ClaveTextBox.Text);
             usuarios.Activo = ActivoCheckBox.Checked;
             usuarios.FechaIngreso = DateTime.Now;
             usuarios.RolId = RolesComboBox.SelectedIndex;
