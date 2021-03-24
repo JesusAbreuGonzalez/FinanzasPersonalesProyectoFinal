@@ -14,7 +14,6 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
         public int GastoId { get; set; }
         public string DescripcionGasto { get; set; }
         public int PresupuestoId { get; set; }
-        public DateTime FechaGasto { get; set; }
 
         public Gastos()
         {
@@ -22,7 +21,6 @@ namespace FinanzasPersonalesProyectoFinal.Entidades
             DescripcionGasto = string.Empty;
             GastosDetalle = new List<GastosDetalle>();
             PresupuestoId = 0;
-            FechaGasto = DateTime.Now;
         }
 
         [ForeignKey("GastoId")]

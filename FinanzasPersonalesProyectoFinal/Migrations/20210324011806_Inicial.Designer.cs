@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinanzasPersonalesProyectoFinal.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210324004916_Inicial")]
+    [Migration("20210324011806_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,37 +43,37 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         new
                         {
                             CategoriaId = 1,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 825, DateTimeKind.Local).AddTicks(3050),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 310, DateTimeKind.Local).AddTicks(4616),
                             NombreCategoria = "Alimentación"
                         },
                         new
                         {
                             CategoriaId = 2,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3595),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 311, DateTimeKind.Local).AddTicks(5029),
                             NombreCategoria = "Educación"
                         },
                         new
                         {
                             CategoriaId = 3,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3617),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 311, DateTimeKind.Local).AddTicks(5048),
                             NombreCategoria = "Entretenimiento"
                         },
                         new
                         {
                             CategoriaId = 4,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3620),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 311, DateTimeKind.Local).AddTicks(5051),
                             NombreCategoria = "Pagos"
                         },
                         new
                         {
                             CategoriaId = 5,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3622),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 311, DateTimeKind.Local).AddTicks(5052),
                             NombreCategoria = "Ropa"
                         },
                         new
                         {
                             CategoriaId = 6,
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 826, DateTimeKind.Local).AddTicks(3624),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 311, DateTimeKind.Local).AddTicks(5054),
                             NombreCategoria = "Vivienda"
                         });
                 });
@@ -184,21 +184,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         {
                             PermisoId = 1,
                             Descripcion = "Agrega o Modifica",
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(7771),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 312, DateTimeKind.Local).AddTicks(7951),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 2,
                             Descripcion = "Consulta",
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(9266),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 312, DateTimeKind.Local).AddTicks(9372),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 3,
                             Descripcion = "Elimina",
-                            FechaCreacion = new DateTime(2021, 3, 23, 20, 49, 15, 827, DateTimeKind.Local).AddTicks(9272),
+                            FechaCreacion = new DateTime(2021, 3, 23, 21, 18, 5, 312, DateTimeKind.Local).AddTicks(9378),
                             VecesAsignado = 0
                         });
                 });
