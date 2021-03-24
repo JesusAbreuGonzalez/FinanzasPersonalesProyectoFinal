@@ -40,6 +40,7 @@ namespace FinanzasPersonalesProyectoFinal
             this.ConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultaUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultaCategoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ConsultaGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@ namespace FinanzasPersonalesProyectoFinal
             this.menuStrip1.Size = new System.Drawing.Size(914, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // RegistrosToolStripMenuItem
             // 
@@ -109,7 +111,8 @@ namespace FinanzasPersonalesProyectoFinal
             // 
             this.ConsultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ConsultaUsuariosToolStripMenuItem,
-            this.ConsultaCategoriasToolStripMenuItem});
+            this.ConsultaCategoriasToolStripMenuItem,
+            this.ConsultaGastosToolStripMenuItem});
             this.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem";
             this.ConsultasToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.ConsultasToolStripMenuItem.Text = "&Consultas";
@@ -125,6 +128,12 @@ namespace FinanzasPersonalesProyectoFinal
             this.ConsultaCategoriasToolStripMenuItem.Name = "ConsultaCategoriasToolStripMenuItem";
             this.ConsultaCategoriasToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaCategoriasToolStripMenuItem.Text = "&Categorías";
+            // 
+            // ConsultaGastosToolStripMenuItem
+            // 
+            this.ConsultaGastosToolStripMenuItem.Name = "ConsultaGastosToolStripMenuItem";
+            this.ConsultaGastosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.ConsultaGastosToolStripMenuItem.Text = "Gastos";
             // 
             // MainForm
             // 
@@ -159,6 +168,7 @@ namespace FinanzasPersonalesProyectoFinal
         private System.Windows.Forms.ToolStripMenuItem ConsultaUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CategoriasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ConsultaCategoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ConsultaGastosToolStripMenuItem;
     }
 }
 

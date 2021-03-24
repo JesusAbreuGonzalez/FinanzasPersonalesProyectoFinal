@@ -28,6 +28,14 @@ namespace FinanzasPersonalesProyectoFinal
             //Consultas
             this.ConsultaUsuariosToolStripMenuItem.Click += new EventHandler(this.ConsultaUsuariosToolStripMenuItem_ItemClicked);
             this.ConsultaCategoriasToolStripMenuItem.Click += new EventHandler(this.ConsultaCategoriasToolStripMenuItem_ItemClicked);
+            this.ConsultaGastosToolStripMenuItem.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
+        }
+
+        private void ConsultaGastosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            var gastos = new cGastos();
+            gastos.MdiParent = this;
+            gastos.Show();
         }
 
         private void ConsultaCategoriasToolStripMenuItem_ItemClicked(object sender, EventArgs e)
@@ -88,6 +96,11 @@ namespace FinanzasPersonalesProyectoFinal
         }
 
         private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

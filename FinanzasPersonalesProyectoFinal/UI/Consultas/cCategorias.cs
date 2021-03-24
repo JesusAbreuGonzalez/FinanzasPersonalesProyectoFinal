@@ -22,43 +22,43 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-                //Si el filtro de la fecha se encuentra marcado, va a tomar en cuenta le rango de fecha
-                if (FechaCheckBox.Checked)
+            //Si el filtro de la fecha se encuentra marcado, va a tomar en cuenta le rango de fecha
+            if (FechaCheckBox.Checked)
+            {
+                if (!String.IsNullOrWhiteSpace(CriterioTextBox.Text))
                 {
-                    if (!String.IsNullOrWhiteSpace(CriterioTextBox.Text))
+                    switch (FiltroComboBox.SelectedIndex)
                     {
-                        switch (FiltroComboBox.SelectedIndex)
-                        {
-                            case 0: //CategoriaId
-                                lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
-                                break;
-                            case 1: //NombreCategoria
-                                lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
-                                break;
-                        }
+                        case 0: //CategoriaId
+                            lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
+                            break;
+                        case 1: //NombreCategoria
+                            lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
+                            break;
                     }
-                    //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
-                    else
-                        lista = CategoriasBLL.GetList(r => (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
                 }
+                //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
                 else
+                    lista = CategoriasBLL.GetList(r => (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
+            }
+            else
+            {
+                if (!String.IsNullOrWhiteSpace(CriterioTextBox.Text))
                 {
-                    if (!String.IsNullOrWhiteSpace(CriterioTextBox.Text))
+                    switch (FiltroComboBox.SelectedIndex)
                     {
-                        switch (FiltroComboBox.SelectedIndex)
-                        {
-                            case 0: //CategoriaId
-                                lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text));
-                                break;
-                            case 1: //NombreCategoria
-                                lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text));
-                                break;
-                        }
+                        case 0: //CategoriaId
+                            lista = CategoriasBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text));
+                            break;
+                        case 1: //NombreCategoria
+                            lista = CategoriasBLL.GetList(r => r.NombreCategoria.Contains(CriterioTextBox.Text));
+                            break;
                     }
-                    //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
-                    else
-                        lista = CategoriasBLL.GetList(r => true);
                 }
+                //En caso de que no haya nada en el textBox, se imprimirán todos los categorias
+                else
+                    lista = CategoriasBLL.GetList(r => true);
+            }
 
 
             CategoriasConsultaDataGridView.DataSource = null;
