@@ -79,6 +79,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
         {
             if (UsuariosBLL.ExisteNombre(NombreCompletoTextBox.Text, ClaveTextBox.Text))
             {
+                LoginErrorProvider.Clear();
                 var ventana = new MainForm();
                 ventana.Show();
             }

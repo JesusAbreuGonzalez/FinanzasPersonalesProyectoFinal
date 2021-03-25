@@ -52,9 +52,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.NombreCompletoTextBox.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.NombreCompletoTextBox.Location = new System.Drawing.Point(58, 172);
             this.NombreCompletoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NombreCompletoTextBox.Multiline = true;
             this.NombreCompletoTextBox.Name = "NombreCompletoTextBox";
-            this.NombreCompletoTextBox.Size = new System.Drawing.Size(355, 40);
+            this.NombreCompletoTextBox.Size = new System.Drawing.Size(355, 32);
             this.NombreCompletoTextBox.TabIndex = 0;
             this.NombreCompletoTextBox.Text = "Nombre Completo";
             this.NombreCompletoTextBox.Enter += new System.EventHandler(this.NombreCompletoTextBox_Enter);
@@ -66,10 +65,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.ClaveTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.ClaveTextBox.Location = new System.Drawing.Point(58, 237);
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ClaveTextBox.Multiline = true;
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
-            this.ClaveTextBox.Size = new System.Drawing.Size(355, 40);
+            this.ClaveTextBox.Size = new System.Drawing.Size(355, 32);
             this.ClaveTextBox.TabIndex = 1;
             this.ClaveTextBox.Text = "Contraseña";
             this.ClaveTextBox.Enter += new System.EventHandler(this.ClaveTextBox_Enter);
