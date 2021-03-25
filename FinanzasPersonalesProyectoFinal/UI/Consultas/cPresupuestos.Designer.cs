@@ -78,6 +78,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // GroupBox
             // 
+            this.GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBox.Controls.Add(this.HastaDateTimePicker);
             this.GroupBox.Controls.Add(this.label2);
             this.GroupBox.Controls.Add(this.DesdeDateTimePicker);
@@ -90,6 +92,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // HastaDateTimePicker
             // 
+            this.HastaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.HastaDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.HastaDateTimePicker.Location = new System.Drawing.Point(359, 20);
@@ -99,6 +102,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(302, 23);
             this.label2.Name = "label2";
@@ -126,6 +130,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // CriterioTextBox
             // 
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CriterioTextBox.Location = new System.Drawing.Point(208, 77);
             this.CriterioTextBox.Name = "CriterioTextBox";
             this.CriterioTextBox.Size = new System.Drawing.Size(521, 27);
@@ -133,6 +139,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = global::FinanzasPersonalesProyectoFinal.Properties.Resources.lupa;
             this.BuscarButton.Location = new System.Drawing.Point(735, 23);
             this.BuscarButton.Name = "BuscarButton";
@@ -145,6 +152,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // PresupuestosConsultaDataGridView
             // 
+            this.PresupuestosConsultaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PresupuestosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PresupuestosConsultaDataGridView.Location = new System.Drawing.Point(14, 120);
             this.PresupuestosConsultaDataGridView.Name = "PresupuestosConsultaDataGridView";
@@ -166,6 +176,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.PresupuestosConsultaDataGridView);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(882, 616);
             this.Name = "cPresupuestos";
             this.Text = "Consultar Presupuestos";
             this.GroupBox.ResumeLayout(false);

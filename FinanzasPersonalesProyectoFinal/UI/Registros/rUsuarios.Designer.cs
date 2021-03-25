@@ -59,26 +59,27 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.UsuarioIdLabel.AutoSize = true;
             this.UsuarioIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UsuarioIdLabel.Location = new System.Drawing.Point(12, 18);
+            this.UsuarioIdLabel.Location = new System.Drawing.Point(14, 24);
             this.UsuarioIdLabel.Name = "UsuarioIdLabel";
-            this.UsuarioIdLabel.Size = new System.Drawing.Size(19, 17);
+            this.UsuarioIdLabel.Size = new System.Drawing.Size(25, 23);
             this.UsuarioIdLabel.TabIndex = 0;
             this.UsuarioIdLabel.Text = "Id";
             // 
             // UsuariosIdNumericUpDown
             // 
-            this.UsuariosIdNumericUpDown.Location = new System.Drawing.Point(77, 15);
+            this.UsuariosIdNumericUpDown.Location = new System.Drawing.Point(102, 20);
+            this.UsuariosIdNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.UsuariosIdNumericUpDown.Name = "UsuariosIdNumericUpDown";
-            this.UsuariosIdNumericUpDown.Size = new System.Drawing.Size(166, 23);
+            this.UsuariosIdNumericUpDown.Size = new System.Drawing.Size(190, 27);
             this.UsuariosIdNumericUpDown.TabIndex = 1;
             // 
             // AliasLabel
             // 
             this.AliasLabel.AutoSize = true;
             this.AliasLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AliasLabel.Location = new System.Drawing.Point(12, 60);
+            this.AliasLabel.Location = new System.Drawing.Point(14, 80);
             this.AliasLabel.Name = "AliasLabel";
-            this.AliasLabel.Size = new System.Drawing.Size(35, 17);
+            this.AliasLabel.Size = new System.Drawing.Size(45, 23);
             this.AliasLabel.TabIndex = 2;
             this.AliasLabel.Text = "Alias";
             // 
@@ -86,9 +87,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.NombresLabel.AutoSize = true;
             this.NombresLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NombresLabel.Location = new System.Drawing.Point(12, 103);
+            this.NombresLabel.Location = new System.Drawing.Point(14, 137);
             this.NombresLabel.Name = "NombresLabel";
-            this.NombresLabel.Size = new System.Drawing.Size(63, 17);
+            this.NombresLabel.Size = new System.Drawing.Size(80, 23);
             this.NombresLabel.TabIndex = 3;
             this.NombresLabel.Text = "Nombres";
             // 
@@ -96,9 +97,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.ClaveLabel.AutoSize = true;
             this.ClaveLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ClaveLabel.Location = new System.Drawing.Point(311, 102);
+            this.ClaveLabel.Location = new System.Drawing.Point(394, 136);
             this.ClaveLabel.Name = "ClaveLabel";
-            this.ClaveLabel.Size = new System.Drawing.Size(39, 17);
+            this.ClaveLabel.Size = new System.Drawing.Size(51, 23);
             this.ClaveLabel.TabIndex = 4;
             this.ClaveLabel.Text = "Clave";
             // 
@@ -106,9 +107,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.EmailLabel.AutoSize = true;
             this.EmailLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EmailLabel.Location = new System.Drawing.Point(12, 145);
+            this.EmailLabel.Location = new System.Drawing.Point(14, 193);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(39, 17);
+            this.EmailLabel.Size = new System.Drawing.Size(51, 23);
             this.EmailLabel.TabIndex = 5;
             this.EmailLabel.Text = "Email";
             // 
@@ -116,39 +117,43 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.ConfirmarClaveLabel.AutoSize = true;
             this.ConfirmarClaveLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ConfirmarClaveLabel.Location = new System.Drawing.Point(311, 145);
+            this.ConfirmarClaveLabel.Location = new System.Drawing.Point(394, 193);
             this.ConfirmarClaveLabel.Name = "ConfirmarClaveLabel";
-            this.ConfirmarClaveLabel.Size = new System.Drawing.Size(101, 17);
+            this.ConfirmarClaveLabel.Size = new System.Drawing.Size(132, 23);
             this.ConfirmarClaveLabel.TabIndex = 6;
             this.ConfirmarClaveLabel.Text = "Confirmar Clave";
             // 
             // AliasTextBox
             // 
-            this.AliasTextBox.Location = new System.Drawing.Point(77, 58);
+            this.AliasTextBox.Location = new System.Drawing.Point(102, 77);
+            this.AliasTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AliasTextBox.Name = "AliasTextBox";
-            this.AliasTextBox.Size = new System.Drawing.Size(228, 23);
+            this.AliasTextBox.Size = new System.Drawing.Size(260, 27);
             this.AliasTextBox.TabIndex = 7;
             // 
             // NombresTextBox
             // 
-            this.NombresTextBox.Location = new System.Drawing.Point(77, 101);
+            this.NombresTextBox.Location = new System.Drawing.Point(100, 135);
+            this.NombresTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NombresTextBox.Name = "NombresTextBox";
-            this.NombresTextBox.Size = new System.Drawing.Size(228, 23);
+            this.NombresTextBox.Size = new System.Drawing.Size(260, 27);
             this.NombresTextBox.TabIndex = 8;
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(77, 144);
+            this.EmailTextBox.Location = new System.Drawing.Point(102, 192);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(228, 23);
+            this.EmailTextBox.Size = new System.Drawing.Size(260, 27);
             this.EmailTextBox.TabIndex = 9;
             // 
             // ClaveTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(418, 101);
+            this.ClaveTextBox.Location = new System.Drawing.Point(532, 135);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
-            this.ClaveTextBox.Size = new System.Drawing.Size(228, 23);
+            this.ClaveTextBox.Size = new System.Drawing.Size(260, 27);
             this.ClaveTextBox.TabIndex = 10;
             // 
             // ActivoCheckBox
@@ -156,9 +161,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.ActivoCheckBox.AutoSize = true;
             this.ActivoCheckBox.Checked = true;
             this.ActivoCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ActivoCheckBox.Location = new System.Drawing.Point(586, 20);
+            this.ActivoCheckBox.Location = new System.Drawing.Point(719, 24);
+            this.ActivoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ActivoCheckBox.Name = "ActivoCheckBox";
-            this.ActivoCheckBox.Size = new System.Drawing.Size(60, 19);
+            this.ActivoCheckBox.Size = new System.Drawing.Size(73, 24);
             this.ActivoCheckBox.TabIndex = 11;
             this.ActivoCheckBox.Text = "Activo";
             this.ActivoCheckBox.UseVisualStyleBackColor = true;
@@ -167,9 +173,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.BuscarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(249, 15);
+            this.BuscarButton.Location = new System.Drawing.Point(298, 19);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(56, 24);
+            this.BuscarButton.Size = new System.Drawing.Size(62, 30);
             this.BuscarButton.TabIndex = 13;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -179,9 +186,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(162, 186);
+            this.NuevoButton.Location = new System.Drawing.Point(203, 252);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(90, 40);
+            this.NuevoButton.Size = new System.Drawing.Size(111, 40);
             this.NuevoButton.TabIndex = 14;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,9 +201,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(284, 186);
+            this.GuardarButton.Location = new System.Drawing.Point(343, 252);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(90, 40);
+            this.GuardarButton.Size = new System.Drawing.Size(111, 40);
             this.GuardarButton.TabIndex = 15;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -207,9 +216,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(404, 186);
+            this.EliminarButton.Location = new System.Drawing.Point(480, 252);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(90, 40);
+            this.EliminarButton.Size = new System.Drawing.Size(111, 40);
             this.EliminarButton.TabIndex = 16;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -218,19 +228,20 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // ConfirmarClaveTextBox
             // 
-            this.ConfirmarClaveTextBox.Location = new System.Drawing.Point(418, 144);
+            this.ConfirmarClaveTextBox.Location = new System.Drawing.Point(532, 192);
+            this.ConfirmarClaveTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ConfirmarClaveTextBox.Name = "ConfirmarClaveTextBox";
             this.ConfirmarClaveTextBox.PasswordChar = '*';
-            this.ConfirmarClaveTextBox.Size = new System.Drawing.Size(228, 23);
+            this.ConfirmarClaveTextBox.Size = new System.Drawing.Size(260, 27);
             this.ConfirmarClaveTextBox.TabIndex = 17;
             // 
             // RolesLabel
             // 
             this.RolesLabel.AutoSize = true;
             this.RolesLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RolesLabel.Location = new System.Drawing.Point(311, 60);
+            this.RolesLabel.Location = new System.Drawing.Point(394, 80);
             this.RolesLabel.Name = "RolesLabel";
-            this.RolesLabel.Size = new System.Drawing.Size(40, 17);
+            this.RolesLabel.Size = new System.Drawing.Size(50, 23);
             this.RolesLabel.TabIndex = 18;
             this.RolesLabel.Text = "Roles";
             // 
@@ -238,9 +249,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.RolesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RolesComboBox.FormattingEnabled = true;
-            this.RolesComboBox.Location = new System.Drawing.Point(418, 58);
+            this.RolesComboBox.Location = new System.Drawing.Point(532, 77);
+            this.RolesComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RolesComboBox.Name = "RolesComboBox";
-            this.RolesComboBox.Size = new System.Drawing.Size(228, 23);
+            this.RolesComboBox.Size = new System.Drawing.Size(260, 28);
             this.RolesComboBox.TabIndex = 19;
             // 
             // UsuariosErrorProvider
@@ -249,9 +261,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // rUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 241);
+            this.ClientSize = new System.Drawing.Size(804, 305);
             this.Controls.Add(this.RolesComboBox);
             this.Controls.Add(this.RolesLabel);
             this.Controls.Add(this.ConfirmarClaveTextBox);
@@ -271,6 +283,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.AliasLabel);
             this.Controls.Add(this.UsuariosIdNumericUpDown);
             this.Controls.Add(this.UsuarioIdLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(822, 352);
+            this.MinimumSize = new System.Drawing.Size(822, 352);
             this.Name = "rUsuarios";
             this.Text = "Registro de Usuarios";
             this.Load += new System.EventHandler(this.rUsuarios_Load);

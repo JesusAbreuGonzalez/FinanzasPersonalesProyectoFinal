@@ -46,35 +46,37 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(80, 55);
+            this.NombreTextBox.Location = new System.Drawing.Point(91, 73);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(241, 23);
+            this.NombreTextBox.Size = new System.Drawing.Size(275, 27);
             this.NombreTextBox.TabIndex = 11;
             // 
             // NombreLabel
             // 
             this.NombreLabel.AutoSize = true;
             this.NombreLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NombreLabel.Location = new System.Drawing.Point(15, 57);
+            this.NombreLabel.Location = new System.Drawing.Point(17, 76);
             this.NombreLabel.Name = "NombreLabel";
-            this.NombreLabel.Size = new System.Drawing.Size(57, 17);
+            this.NombreLabel.Size = new System.Drawing.Size(73, 23);
             this.NombreLabel.TabIndex = 10;
             this.NombreLabel.Text = "Nombre";
             // 
             // CategoriasIdNumericUpDown
             // 
-            this.CategoriasIdNumericUpDown.Location = new System.Drawing.Point(80, 12);
+            this.CategoriasIdNumericUpDown.Location = new System.Drawing.Point(91, 16);
+            this.CategoriasIdNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CategoriasIdNumericUpDown.Name = "CategoriasIdNumericUpDown";
-            this.CategoriasIdNumericUpDown.Size = new System.Drawing.Size(175, 23);
+            this.CategoriasIdNumericUpDown.Size = new System.Drawing.Size(200, 27);
             this.CategoriasIdNumericUpDown.TabIndex = 9;
             // 
             // UsuarioIdLabel
             // 
             this.UsuarioIdLabel.AutoSize = true;
             this.UsuarioIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UsuarioIdLabel.Location = new System.Drawing.Point(15, 15);
+            this.UsuarioIdLabel.Location = new System.Drawing.Point(17, 20);
             this.UsuarioIdLabel.Name = "UsuarioIdLabel";
-            this.UsuarioIdLabel.Size = new System.Drawing.Size(19, 17);
+            this.UsuarioIdLabel.Size = new System.Drawing.Size(25, 23);
             this.UsuarioIdLabel.TabIndex = 8;
             this.UsuarioIdLabel.Text = "Id";
             // 
@@ -83,9 +85,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(231, 97);
+            this.EliminarButton.Location = new System.Drawing.Point(264, 129);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(90, 40);
+            this.EliminarButton.Size = new System.Drawing.Size(103, 53);
             this.EliminarButton.TabIndex = 19;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,9 +100,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(123, 97);
+            this.GuardarButton.Location = new System.Drawing.Point(141, 129);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(90, 40);
+            this.GuardarButton.Size = new System.Drawing.Size(103, 53);
             this.GuardarButton.TabIndex = 18;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -111,9 +115,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(15, 97);
+            this.NuevoButton.Location = new System.Drawing.Point(17, 129);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(90, 40);
+            this.NuevoButton.Size = new System.Drawing.Size(103, 53);
             this.NuevoButton.TabIndex = 17;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -124,9 +129,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.BuscarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(261, 12);
+            this.BuscarButton.Location = new System.Drawing.Point(298, 16);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(60, 24);
+            this.BuscarButton.Size = new System.Drawing.Size(69, 32);
             this.BuscarButton.TabIndex = 20;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -137,9 +143,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // rCategorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 148);
+            this.ClientSize = new System.Drawing.Size(384, 197);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
@@ -148,6 +154,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.NombreLabel);
             this.Controls.Add(this.CategoriasIdNumericUpDown);
             this.Controls.Add(this.UsuarioIdLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(402, 244);
+            this.MinimumSize = new System.Drawing.Size(402, 244);
             this.Name = "rCategorias";
             this.Text = "Registro de Categorias";
             ((System.ComponentModel.ISupportInitialize)(this.CategoriasIdNumericUpDown)).EndInit();

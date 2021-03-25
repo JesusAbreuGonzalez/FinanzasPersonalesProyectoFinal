@@ -80,9 +80,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // PresupuestoLabel
             // 
+            this.PresupuestoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PresupuestoLabel.AutoSize = true;
             this.PresupuestoLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PresupuestoLabel.Location = new System.Drawing.Point(292, 64);
+            this.PresupuestoLabel.Location = new System.Drawing.Point(303, 64);
             this.PresupuestoLabel.Name = "PresupuestoLabel";
             this.PresupuestoLabel.Size = new System.Drawing.Size(104, 23);
             this.PresupuestoLabel.TabIndex = 2;
@@ -90,6 +91,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // DetalleGastosGroupBox
             // 
+            this.DetalleGastosGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DetalleGastosGroupBox.Controls.Add(this.RemoverButton);
             this.DetalleGastosGroupBox.Controls.Add(this.AgregarButton);
             this.DetalleGastosGroupBox.Controls.Add(this.GastosDataGridView);
@@ -97,19 +101,20 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.DetalleGastosGroupBox.Controls.Add(this.MontoLabel);
             this.DetalleGastosGroupBox.Location = new System.Drawing.Point(12, 115);
             this.DetalleGastosGroupBox.Name = "DetalleGastosGroupBox";
-            this.DetalleGastosGroupBox.Size = new System.Drawing.Size(517, 301);
+            this.DetalleGastosGroupBox.Size = new System.Drawing.Size(523, 387);
             this.DetalleGastosGroupBox.TabIndex = 3;
             this.DetalleGastosGroupBox.TabStop = false;
             this.DetalleGastosGroupBox.Text = "Detalle del Gasto";
             // 
             // RemoverButton
             // 
+            this.RemoverButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RemoverButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RemoverButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoverButton.Image")));
             this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoverButton.Location = new System.Drawing.Point(408, 41);
+            this.RemoverButton.Location = new System.Drawing.Point(414, 41);
             this.RemoverButton.Name = "RemoverButton";
-            this.RemoverButton.Size = new System.Drawing.Size(103, 26);
+            this.RemoverButton.Size = new System.Drawing.Size(103, 35);
             this.RemoverButton.TabIndex = 8;
             this.RemoverButton.Text = "Remover";
             this.RemoverButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,11 +123,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // AgregarButton
             // 
+            this.AgregarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
             this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AgregarButton.Location = new System.Drawing.Point(280, 41);
+            this.AgregarButton.Location = new System.Drawing.Point(291, 41);
             this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(103, 26);
+            this.AgregarButton.Size = new System.Drawing.Size(103, 35);
             this.AgregarButton.TabIndex = 7;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -131,17 +137,20 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // GastosDataGridView
             // 
+            this.GastosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GastosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GastosDataGridView.Location = new System.Drawing.Point(6, 75);
+            this.GastosDataGridView.Location = new System.Drawing.Point(6, 91);
             this.GastosDataGridView.Name = "GastosDataGridView";
             this.GastosDataGridView.RowHeadersWidth = 51;
             this.GastosDataGridView.RowTemplate.Height = 25;
-            this.GastosDataGridView.Size = new System.Drawing.Size(505, 220);
+            this.GastosDataGridView.Size = new System.Drawing.Size(511, 290);
             this.GastosDataGridView.TabIndex = 6;
             // 
             // MontoTextBox
             // 
-            this.MontoTextBox.Location = new System.Drawing.Point(6, 41);
+            this.MontoTextBox.Location = new System.Drawing.Point(6, 47);
             this.MontoTextBox.Name = "MontoTextBox";
             this.MontoTextBox.Size = new System.Drawing.Size(261, 29);
             this.MontoTextBox.TabIndex = 5;
@@ -172,8 +181,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // PresupuestoIdComboBox
             // 
+            this.PresupuestoIdComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PresupuestoIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PresupuestoIdComboBox.FormattingEnabled = true;
-            this.PresupuestoIdComboBox.Location = new System.Drawing.Point(292, 84);
+            this.PresupuestoIdComboBox.Location = new System.Drawing.Point(304, 84);
             this.PresupuestoIdComboBox.Name = "PresupuestoIdComboBox";
             this.PresupuestoIdComboBox.Size = new System.Drawing.Size(231, 29);
             this.PresupuestoIdComboBox.TabIndex = 6;
@@ -183,19 +194,20 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
             this.BuscarButton.Location = new System.Drawing.Point(218, 30);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(61, 26);
+            this.BuscarButton.Size = new System.Drawing.Size(61, 29);
             this.BuscarButton.TabIndex = 7;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.EliminarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(333, 422);
+            this.EliminarButton.Location = new System.Drawing.Point(342, 508);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(90, 40);
+            this.EliminarButton.Size = new System.Drawing.Size(111, 40);
             this.EliminarButton.TabIndex = 22;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,12 +216,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.GuardarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(225, 422);
+            this.GuardarButton.Location = new System.Drawing.Point(218, 508);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(90, 40);
+            this.GuardarButton.Size = new System.Drawing.Size(111, 40);
             this.GuardarButton.TabIndex = 21;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -218,12 +231,13 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NuevoButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(117, 422);
+            this.NuevoButton.Location = new System.Drawing.Point(91, 508);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(90, 40);
+            this.NuevoButton.Size = new System.Drawing.Size(111, 40);
             this.NuevoButton.TabIndex = 20;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -234,7 +248,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 477);
+            this.ClientSize = new System.Drawing.Size(553, 563);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -247,6 +261,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.DescripcionLabel);
             this.Controls.Add(this.IdGastosLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaximumSize = new System.Drawing.Size(571, 610);
+            this.MinimumSize = new System.Drawing.Size(571, 610);
             this.Name = "rGastos";
             this.Text = "Registro de Gastos";
             this.Load += new System.EventHandler(this.rGastos_Load);

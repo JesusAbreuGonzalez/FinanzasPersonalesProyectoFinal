@@ -52,34 +52,37 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.BuscarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(263, 16);
+            this.BuscarButton.Location = new System.Drawing.Point(301, 21);
+            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(56, 24);
+            this.BuscarButton.Size = new System.Drawing.Size(63, 27);
             this.BuscarButton.TabIndex = 22;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // NombresTextBox
             // 
-            this.NombresTextBox.Location = new System.Drawing.Point(91, 57);
+            this.NombresTextBox.Location = new System.Drawing.Point(104, 76);
+            this.NombresTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NombresTextBox.Name = "NombresTextBox";
-            this.NombresTextBox.Size = new System.Drawing.Size(228, 23);
+            this.NombresTextBox.Size = new System.Drawing.Size(260, 27);
             this.NombresTextBox.TabIndex = 20;
             // 
             // MontoPresupuestoTextBox
             // 
-            this.MontoPresupuestoTextBox.Location = new System.Drawing.Point(91, 99);
+            this.MontoPresupuestoTextBox.Location = new System.Drawing.Point(104, 132);
+            this.MontoPresupuestoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MontoPresupuestoTextBox.Name = "MontoPresupuestoTextBox";
-            this.MontoPresupuestoTextBox.Size = new System.Drawing.Size(228, 23);
+            this.MontoPresupuestoTextBox.Size = new System.Drawing.Size(260, 27);
             this.MontoPresupuestoTextBox.TabIndex = 19;
             // 
             // CategoriasLabel
             // 
             this.CategoriasLabel.AutoSize = true;
             this.CategoriasLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CategoriasLabel.Location = new System.Drawing.Point(14, 142);
+            this.CategoriasLabel.Location = new System.Drawing.Point(16, 189);
             this.CategoriasLabel.Name = "CategoriasLabel";
-            this.CategoriasLabel.Size = new System.Drawing.Size(71, 17);
+            this.CategoriasLabel.Size = new System.Drawing.Size(91, 23);
             this.CategoriasLabel.TabIndex = 18;
             this.CategoriasLabel.Text = "Categorías";
             // 
@@ -87,9 +90,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.NombresLabel.AutoSize = true;
             this.NombresLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NombresLabel.Location = new System.Drawing.Point(14, 58);
+            this.NombresLabel.Location = new System.Drawing.Point(16, 77);
             this.NombresLabel.Name = "NombresLabel";
-            this.NombresLabel.Size = new System.Drawing.Size(57, 17);
+            this.NombresLabel.Size = new System.Drawing.Size(73, 23);
             this.NombresLabel.TabIndex = 17;
             this.NombresLabel.Text = "Nombre";
             // 
@@ -97,26 +100,27 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.MontoLabel.AutoSize = true;
             this.MontoLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MontoLabel.Location = new System.Drawing.Point(14, 100);
+            this.MontoLabel.Location = new System.Drawing.Point(16, 133);
             this.MontoLabel.Name = "MontoLabel";
-            this.MontoLabel.Size = new System.Drawing.Size(47, 17);
+            this.MontoLabel.Size = new System.Drawing.Size(61, 23);
             this.MontoLabel.TabIndex = 16;
             this.MontoLabel.Text = "Monto";
             // 
             // PresupuestosIdNumericUpDown
             // 
-            this.PresupuestosIdNumericUpDown.Location = new System.Drawing.Point(91, 16);
+            this.PresupuestosIdNumericUpDown.Location = new System.Drawing.Point(104, 21);
+            this.PresupuestosIdNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PresupuestosIdNumericUpDown.Name = "PresupuestosIdNumericUpDown";
-            this.PresupuestosIdNumericUpDown.Size = new System.Drawing.Size(166, 23);
+            this.PresupuestosIdNumericUpDown.Size = new System.Drawing.Size(190, 27);
             this.PresupuestosIdNumericUpDown.TabIndex = 15;
             // 
             // UsuarioIdLabel
             // 
             this.UsuarioIdLabel.AutoSize = true;
             this.UsuarioIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UsuarioIdLabel.Location = new System.Drawing.Point(14, 18);
+            this.UsuarioIdLabel.Location = new System.Drawing.Point(16, 24);
             this.UsuarioIdLabel.Name = "UsuarioIdLabel";
-            this.UsuarioIdLabel.Size = new System.Drawing.Size(19, 17);
+            this.UsuarioIdLabel.Size = new System.Drawing.Size(25, 23);
             this.UsuarioIdLabel.TabIndex = 14;
             this.UsuarioIdLabel.Text = "Id";
             // 
@@ -124,9 +128,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.CategoriasComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriasComboBox.FormattingEnabled = true;
-            this.CategoriasComboBox.Location = new System.Drawing.Point(91, 141);
+            this.CategoriasComboBox.Location = new System.Drawing.Point(104, 188);
+            this.CategoriasComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CategoriasComboBox.Name = "CategoriasComboBox";
-            this.CategoriasComboBox.Size = new System.Drawing.Size(228, 23);
+            this.CategoriasComboBox.Size = new System.Drawing.Size(260, 28);
             this.CategoriasComboBox.TabIndex = 23;
             // 
             // EliminarButton
@@ -134,9 +139,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(229, 180);
+            this.EliminarButton.Location = new System.Drawing.Point(262, 240);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(90, 40);
+            this.EliminarButton.Size = new System.Drawing.Size(103, 53);
             this.EliminarButton.TabIndex = 26;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,9 +154,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(123, 180);
+            this.GuardarButton.Location = new System.Drawing.Point(141, 240);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(90, 40);
+            this.GuardarButton.Size = new System.Drawing.Size(103, 53);
             this.GuardarButton.TabIndex = 25;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -162,9 +169,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(14, 180);
+            this.NuevoButton.Location = new System.Drawing.Point(16, 240);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(90, 40);
+            this.NuevoButton.Size = new System.Drawing.Size(103, 53);
             this.NuevoButton.TabIndex = 24;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -177,9 +185,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // rPresupuestos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 236);
+            this.ClientSize = new System.Drawing.Size(381, 315);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -192,6 +200,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.MontoLabel);
             this.Controls.Add(this.PresupuestosIdNumericUpDown);
             this.Controls.Add(this.UsuarioIdLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(399, 362);
+            this.MinimumSize = new System.Drawing.Size(399, 362);
             this.Name = "rPresupuestos";
             this.Text = "Registro de Presupuestos";
             this.Load += new System.EventHandler(this.rPresupuestos_Load);

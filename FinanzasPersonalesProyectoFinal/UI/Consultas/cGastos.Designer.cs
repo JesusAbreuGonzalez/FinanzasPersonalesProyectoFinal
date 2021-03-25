@@ -46,37 +46,37 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             "Id",
             "Descripción",
             "Presupuesto id"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(50, 20);
-            this.FiltroComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FiltroComboBox.Location = new System.Drawing.Point(57, 27);
             this.FiltroComboBox.Name = "FiltroComboBox";
-            this.FiltroComboBox.Size = new System.Drawing.Size(148, 23);
+            this.FiltroComboBox.Size = new System.Drawing.Size(169, 28);
             this.FiltroComboBox.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 23);
+            this.label3.Location = new System.Drawing.Point(11, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "Filtro";
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(256, 20);
-            this.CriterioTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CriterioTextBox.Location = new System.Drawing.Point(293, 27);
             this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(405, 23);
+            this.CriterioTextBox.Size = new System.Drawing.Size(462, 27);
             this.CriterioTextBox.TabIndex = 17;
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuscarButton.Location = new System.Drawing.Point(667, 20);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BuscarButton.Location = new System.Drawing.Point(762, 27);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarButton.Size = new System.Drawing.Size(86, 31);
             this.BuscarButton.TabIndex = 16;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,36 +85,38 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // GastosConsultaDataGridView
             // 
+            this.GastosConsultaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GastosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GastosConsultaDataGridView.Location = new System.Drawing.Point(10, 56);
-            this.GastosConsultaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GastosConsultaDataGridView.Location = new System.Drawing.Point(11, 75);
             this.GastosConsultaDataGridView.Name = "GastosConsultaDataGridView";
             this.GastosConsultaDataGridView.RowHeadersWidth = 51;
             this.GastosConsultaDataGridView.RowTemplate.Height = 29;
-            this.GastosConsultaDataGridView.Size = new System.Drawing.Size(732, 313);
+            this.GastosConsultaDataGridView.Size = new System.Drawing.Size(837, 417);
             this.GastosConsultaDataGridView.TabIndex = 15;
             // 
             // CriterioLabel
             // 
             this.CriterioLabel.AutoSize = true;
-            this.CriterioLabel.Location = new System.Drawing.Point(204, 23);
+            this.CriterioLabel.Location = new System.Drawing.Point(233, 31);
             this.CriterioLabel.Name = "CriterioLabel";
-            this.CriterioLabel.Size = new System.Drawing.Size(46, 15);
+            this.CriterioLabel.Size = new System.Drawing.Size(58, 20);
             this.CriterioLabel.TabIndex = 22;
             this.CriterioLabel.Text = "Criterio";
             // 
             // cGastos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 380);
+            this.ClientSize = new System.Drawing.Size(859, 507);
             this.Controls.Add(this.CriterioLabel);
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.GastosConsultaDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(877, 554);
             this.Name = "cGastos";
             this.Text = "Consulta de Gastos";
             ((System.ComponentModel.ISupportInitialize)(this.GastosConsultaDataGridView)).EndInit();

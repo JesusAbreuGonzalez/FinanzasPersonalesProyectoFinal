@@ -51,18 +51,22 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // UsuariosConsultaDataGridView
             // 
+            this.UsuariosConsultaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UsuariosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UsuariosConsultaDataGridView.Location = new System.Drawing.Point(12, 117);
             this.UsuariosConsultaDataGridView.Name = "UsuariosConsultaDataGridView";
             this.UsuariosConsultaDataGridView.RowHeadersWidth = 51;
             this.UsuariosConsultaDataGridView.RowTemplate.Height = 29;
-            this.UsuariosConsultaDataGridView.Size = new System.Drawing.Size(964, 435);
+            this.UsuariosConsultaDataGridView.Size = new System.Drawing.Size(1157, 521);
             this.UsuariosConsultaDataGridView.TabIndex = 0;
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = global::FinanzasPersonalesProyectoFinal.Properties.Resources.lupa;
-            this.BuscarButton.Location = new System.Drawing.Point(862, 22);
+            this.BuscarButton.Location = new System.Drawing.Point(1055, 22);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(115, 86);
             this.BuscarButton.TabIndex = 1;
@@ -73,10 +77,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // ActivoGroupBox
             // 
+            this.ActivoGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ActivoGroupBox.Controls.Add(this.InactivosRadioButton);
             this.ActivoGroupBox.Controls.Add(this.ActivosRadioButton);
             this.ActivoGroupBox.Controls.Add(this.TodosRadioButton);
-            this.ActivoGroupBox.Location = new System.Drawing.Point(733, 9);
+            this.ActivoGroupBox.Location = new System.Drawing.Point(926, 9);
             this.ActivoGroupBox.Name = "ActivoGroupBox";
             this.ActivoGroupBox.Size = new System.Drawing.Size(123, 99);
             this.ActivoGroupBox.TabIndex = 2;
@@ -117,36 +122,42 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // CriterioTextBox
             // 
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CriterioTextBox.Location = new System.Drawing.Point(206, 74);
             this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(521, 27);
+            this.CriterioTextBox.Size = new System.Drawing.Size(714, 27);
             this.CriterioTextBox.TabIndex = 3;
             // 
             // GroupBox
             // 
+            this.GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBox.Controls.Add(this.HastaDateTimePicker);
             this.GroupBox.Controls.Add(this.label2);
             this.GroupBox.Controls.Add(this.DesdeDateTimePicker);
             this.GroupBox.Controls.Add(this.label1);
             this.GroupBox.Location = new System.Drawing.Point(206, 9);
             this.GroupBox.Name = "GroupBox";
-            this.GroupBox.Size = new System.Drawing.Size(521, 59);
+            this.GroupBox.Size = new System.Drawing.Size(714, 59);
             this.GroupBox.TabIndex = 4;
             this.GroupBox.TabStop = false;
             // 
             // HastaDateTimePicker
             // 
+            this.HastaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.HastaDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(359, 20);
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(552, 20);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
             this.HastaDateTimePicker.Size = new System.Drawing.Size(156, 27);
             this.HastaDateTimePicker.TabIndex = 3;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 24);
+            this.label2.Location = new System.Drawing.Point(495, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 2;
@@ -207,7 +218,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 567);
+            this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.FechaCheckBox);
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.label3);
@@ -216,6 +227,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             this.Controls.Add(this.ActivoGroupBox);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.UsuariosConsultaDataGridView);
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "cUsuarios";
             this.Text = "Consulta Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.UsuariosConsultaDataGridView)).EndInit();

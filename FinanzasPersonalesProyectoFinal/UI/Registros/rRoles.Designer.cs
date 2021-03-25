@@ -57,7 +57,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // ActivoCheckBox
             // 
             this.ActivoCheckBox.AutoSize = true;
-            this.ActivoCheckBox.Location = new System.Drawing.Point(552, 71);
+            this.ActivoCheckBox.Location = new System.Drawing.Point(560, 67);
             this.ActivoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ActivoCheckBox.Name = "ActivoCheckBox";
             this.ActivoCheckBox.Size = new System.Drawing.Size(73, 24);
@@ -67,14 +67,14 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             // RolIdNumericUpDown
             // 
-            this.RolIdNumericUpDown.Location = new System.Drawing.Point(107, 20);
+            this.RolIdNumericUpDown.Location = new System.Drawing.Point(125, 20);
             this.RolIdNumericUpDown.Name = "RolIdNumericUpDown";
             this.RolIdNumericUpDown.Size = new System.Drawing.Size(155, 27);
             this.RolIdNumericUpDown.TabIndex = 24;
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(107, 68);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(125, 67);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(231, 27);
             this.DescripcionTextBox.TabIndex = 23;
@@ -122,7 +122,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.RemoverButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RemoverButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoverButton.Image")));
             this.RemoverButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RemoverButton.Location = new System.Drawing.Point(489, 45);
+            this.RemoverButton.Location = new System.Drawing.Point(489, 46);
             this.RemoverButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RemoverButton.Name = "RemoverButton";
             this.RemoverButton.Size = new System.Drawing.Size(118, 35);
@@ -190,10 +190,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // BuscarButton
             // 
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
-            this.BuscarButton.Location = new System.Drawing.Point(270, 16);
+            this.BuscarButton.Location = new System.Drawing.Point(286, 20);
             this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(70, 39);
+            this.BuscarButton.Size = new System.Drawing.Size(70, 30);
             this.BuscarButton.TabIndex = 28;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -206,7 +206,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.EliminarButton.Location = new System.Drawing.Point(391, 529);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(103, 53);
+            this.EliminarButton.Size = new System.Drawing.Size(111, 40);
             this.EliminarButton.TabIndex = 31;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -221,7 +221,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.GuardarButton.Location = new System.Drawing.Point(267, 529);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(103, 53);
+            this.GuardarButton.Size = new System.Drawing.Size(111, 40);
             this.GuardarButton.TabIndex = 30;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,7 +236,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.NuevoButton.Location = new System.Drawing.Point(144, 529);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(103, 53);
+            this.NuevoButton.Size = new System.Drawing.Size(111, 40);
             this.NuevoButton.TabIndex = 29;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,7 +251,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 601);
+            this.ClientSize = new System.Drawing.Size(648, 590);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
@@ -263,6 +263,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             this.Controls.Add(this.DescripcionLabel);
             this.Controls.Add(this.RolIdLabel);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(666, 637);
+            this.MinimumSize = new System.Drawing.Size(666, 637);
             this.Name = "rRoles";
             this.Text = "Registro de Roles";
             this.Load += new System.EventHandler(this.rRoles_Load);

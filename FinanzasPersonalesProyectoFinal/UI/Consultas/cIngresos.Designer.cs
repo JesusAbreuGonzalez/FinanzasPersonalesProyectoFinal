@@ -42,9 +42,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // CriterioLabel
             // 
             this.CriterioLabel.AutoSize = true;
-            this.CriterioLabel.Location = new System.Drawing.Point(206, 23);
+            this.CriterioLabel.Location = new System.Drawing.Point(235, 31);
             this.CriterioLabel.Name = "CriterioLabel";
-            this.CriterioLabel.Size = new System.Drawing.Size(46, 15);
+            this.CriterioLabel.Size = new System.Drawing.Size(58, 20);
             this.CriterioLabel.TabIndex = 27;
             this.CriterioLabel.Text = "Criterio";
             // 
@@ -55,37 +55,37 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             "Id",
             "Descripción",
             "Presupuesto id"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(52, 20);
-            this.FiltroComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FiltroComboBox.Location = new System.Drawing.Point(59, 27);
             this.FiltroComboBox.Name = "FiltroComboBox";
-            this.FiltroComboBox.Size = new System.Drawing.Size(148, 23);
+            this.FiltroComboBox.Size = new System.Drawing.Size(169, 28);
             this.FiltroComboBox.TabIndex = 26;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 23);
+            this.label3.Location = new System.Drawing.Point(14, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 25;
             this.label3.Text = "Filtro";
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(258, 20);
-            this.CriterioTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CriterioTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CriterioTextBox.Location = new System.Drawing.Point(295, 27);
             this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(405, 23);
+            this.CriterioTextBox.Size = new System.Drawing.Size(462, 27);
             this.CriterioTextBox.TabIndex = 24;
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BuscarButton.Location = new System.Drawing.Point(669, 20);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BuscarButton.Location = new System.Drawing.Point(765, 27);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarButton.Size = new System.Drawing.Size(86, 31);
             this.BuscarButton.TabIndex = 23;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -94,24 +94,31 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // IngresosConsultaDataGridView
             // 
+            this.IngresosConsultaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.IngresosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.IngresosConsultaDataGridView.Location = new System.Drawing.Point(12, 55);
+            this.IngresosConsultaDataGridView.Location = new System.Drawing.Point(14, 73);
+            this.IngresosConsultaDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.IngresosConsultaDataGridView.Name = "IngresosConsultaDataGridView";
+            this.IngresosConsultaDataGridView.RowHeadersWidth = 51;
             this.IngresosConsultaDataGridView.RowTemplate.Height = 25;
-            this.IngresosConsultaDataGridView.Size = new System.Drawing.Size(732, 313);
+            this.IngresosConsultaDataGridView.Size = new System.Drawing.Size(837, 417);
             this.IngresosConsultaDataGridView.TabIndex = 28;
             // 
             // cIngresos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 380);
+            this.ClientSize = new System.Drawing.Size(864, 507);
             this.Controls.Add(this.IngresosConsultaDataGridView);
             this.Controls.Add(this.CriterioLabel);
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.BuscarButton);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(882, 554);
             this.Name = "cIngresos";
             this.Text = "Consultar Ingresos";
             ((System.ComponentModel.ISupportInitialize)(this.IngresosConsultaDataGridView)).EndInit();
