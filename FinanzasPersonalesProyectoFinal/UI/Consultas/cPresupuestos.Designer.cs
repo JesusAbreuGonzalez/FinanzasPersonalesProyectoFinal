@@ -47,10 +47,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // FechaCheckBox
             // 
             this.FechaCheckBox.AutoSize = true;
-            this.FechaCheckBox.Location = new System.Drawing.Point(12, 26);
-            this.FechaCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FechaCheckBox.Location = new System.Drawing.Point(14, 35);
             this.FechaCheckBox.Name = "FechaCheckBox";
-            this.FechaCheckBox.Size = new System.Drawing.Size(130, 19);
+            this.FechaCheckBox.Size = new System.Drawing.Size(163, 24);
             this.FechaCheckBox.TabIndex = 21;
             this.FechaCheckBox.Text = "Usar filtro de fechas";
             this.FechaCheckBox.UseVisualStyleBackColor = true;
@@ -60,19 +59,20 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             this.FiltroComboBox.FormattingEnabled = true;
             this.FiltroComboBox.Items.AddRange(new object[] {
             "Id",
-            "Nombre"});
-            this.FiltroComboBox.Location = new System.Drawing.Point(55, 58);
-            this.FiltroComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            "Nombre",
+            "Monto",
+            "Categoria Id"});
+            this.FiltroComboBox.Location = new System.Drawing.Point(63, 77);
             this.FiltroComboBox.Name = "FiltroComboBox";
-            this.FiltroComboBox.Size = new System.Drawing.Size(106, 23);
+            this.FiltroComboBox.Size = new System.Drawing.Size(121, 28);
             this.FiltroComboBox.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 60);
+            this.label3.Location = new System.Drawing.Point(14, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 18;
             this.label3.Text = "Filtro";
             // 
@@ -82,11 +82,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             this.GroupBox.Controls.Add(this.label2);
             this.GroupBox.Controls.Add(this.DesdeDateTimePicker);
             this.GroupBox.Controls.Add(this.label1);
-            this.GroupBox.Location = new System.Drawing.Point(182, 9);
-            this.GroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GroupBox.Location = new System.Drawing.Point(208, 12);
             this.GroupBox.Name = "GroupBox";
-            this.GroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GroupBox.Size = new System.Drawing.Size(456, 44);
+            this.GroupBox.Size = new System.Drawing.Size(521, 59);
             this.GroupBox.TabIndex = 19;
             this.GroupBox.TabStop = false;
             // 
@@ -94,18 +92,17 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             this.HastaDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HastaDateTimePicker.Location = new System.Drawing.Point(314, 15);
-            this.HastaDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HastaDateTimePicker.Location = new System.Drawing.Point(359, 20);
             this.HastaDateTimePicker.Name = "HastaDateTimePicker";
-            this.HastaDateTimePicker.Size = new System.Drawing.Size(137, 23);
+            this.HastaDateTimePicker.Size = new System.Drawing.Size(156, 27);
             this.HastaDateTimePicker.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(264, 17);
+            this.label2.Location = new System.Drawing.Point(302, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Hasta";
             // 
@@ -113,35 +110,32 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             this.DesdeDateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.DesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DesdeDateTimePicker.Location = new System.Drawing.Point(55, 15);
-            this.DesdeDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DesdeDateTimePicker.Location = new System.Drawing.Point(63, 20);
             this.DesdeDateTimePicker.Name = "DesdeDateTimePicker";
-            this.DesdeDateTimePicker.Size = new System.Drawing.Size(137, 23);
+            this.DesdeDateTimePicker.Size = new System.Drawing.Size(156, 27);
             this.DesdeDateTimePicker.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 17);
+            this.label1.Location = new System.Drawing.Point(6, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Desde";
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(182, 58);
-            this.CriterioTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CriterioTextBox.Location = new System.Drawing.Point(208, 77);
             this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(456, 23);
+            this.CriterioTextBox.Size = new System.Drawing.Size(521, 27);
             this.CriterioTextBox.TabIndex = 17;
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(643, 17);
-            this.BuscarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BuscarButton.Location = new System.Drawing.Point(735, 23);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(101, 64);
+            this.BuscarButton.Size = new System.Drawing.Size(115, 85);
             this.BuscarButton.TabIndex = 16;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -151,19 +145,18 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // PresupuestosConsultaDataGridView
             // 
             this.PresupuestosConsultaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PresupuestosConsultaDataGridView.Location = new System.Drawing.Point(12, 90);
-            this.PresupuestosConsultaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PresupuestosConsultaDataGridView.Location = new System.Drawing.Point(14, 120);
             this.PresupuestosConsultaDataGridView.Name = "PresupuestosConsultaDataGridView";
             this.PresupuestosConsultaDataGridView.RowHeadersWidth = 51;
             this.PresupuestosConsultaDataGridView.RowTemplate.Height = 29;
-            this.PresupuestosConsultaDataGridView.Size = new System.Drawing.Size(732, 326);
+            this.PresupuestosConsultaDataGridView.Size = new System.Drawing.Size(837, 435);
             this.PresupuestosConsultaDataGridView.TabIndex = 15;
             // 
             // cPresupuestos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 427);
+            this.ClientSize = new System.Drawing.Size(864, 569);
             this.Controls.Add(this.FechaCheckBox);
             this.Controls.Add(this.FiltroComboBox);
             this.Controls.Add(this.label3);
@@ -171,6 +164,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.PresupuestosConsultaDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "cPresupuestos";
             this.Text = "Consultar Presupuestos";
             this.GroupBox.ResumeLayout(false);

@@ -35,6 +35,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                         case 1: //NombrePresupuesto
                             lista = PresupuestosBLL.GetList(r => r.NombrePresupuesto.Contains(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
                             break;
+                        case 2: //MontoPresupuesto
+                            lista = PresupuestosBLL.GetList(r => r.MontoPresupuesto == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
+                            break;
+                        case 3: //CategoriaId
+                            lista = PresupuestosBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text) && (r.FechaCreacion >= DesdeDateTimePicker.Value && r.FechaCreacion <= HastaDateTimePicker.Value));
+                            break;
                     }
                 }
                 //En caso de que no haya nada en el textBox, se imprimirán todos los presupuestos
@@ -52,6 +58,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
                             break;
                         case 1: //NombrePresupuesto
                             lista = PresupuestosBLL.GetList(r => r.NombrePresupuesto.Contains(CriterioTextBox.Text));
+                            break;
+                        case 2: //MontoPresupuesto
+                            lista = PresupuestosBLL.GetList(r => r.MontoPresupuesto == Utilidades.ToInt(CriterioTextBox.Text));
+                            break;
+                        case 3: //CategoriaId
+                            lista = PresupuestosBLL.GetList(r => r.CategoriaId == Utilidades.ToInt(CriterioTextBox.Text));
                             break;
                     }
                 }
