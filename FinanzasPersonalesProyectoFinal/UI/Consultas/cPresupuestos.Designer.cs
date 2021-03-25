@@ -133,6 +133,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Consultas
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::FinanzasPersonalesProyectoFinal.Properties.Resources.lupa;
             this.BuscarButton.Location = new System.Drawing.Point(735, 23);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(115, 85);
