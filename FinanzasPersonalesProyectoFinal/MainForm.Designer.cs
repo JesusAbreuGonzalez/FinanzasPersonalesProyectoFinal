@@ -113,12 +113,12 @@ namespace FinanzasPersonalesProyectoFinal
             // ConsultasToolStripMenuItem
             // 
             this.ConsultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ConsultaRolesToolStripMenuItem,
             this.ConsultaUsuariosToolStripMenuItem,
+            this.ConsultaPresupuestosToolStripMenuItem,
             this.ConsultaCategoriasToolStripMenuItem,
             this.ConsultaGastosToolStripMenuItem,
-            this.ConsultaIngresosToolStripMenuItem,
-            this.ConsultaPresupuestosToolStripMenuItem,
-            this.ConsultaRolesToolStripMenuItem});
+            this.ConsultaIngresosToolStripMenuItem});
             this.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem";
             this.ConsultasToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.ConsultasToolStripMenuItem.Text = "&Consultas";
@@ -126,25 +126,25 @@ namespace FinanzasPersonalesProyectoFinal
             // ConsultaUsuariosToolStripMenuItem
             // 
             this.ConsultaUsuariosToolStripMenuItem.Name = "ConsultaUsuariosToolStripMenuItem";
-            this.ConsultaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.ConsultaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaUsuariosToolStripMenuItem.Text = "&Usuarios";
             // 
             // ConsultaCategoriasToolStripMenuItem
             // 
             this.ConsultaCategoriasToolStripMenuItem.Name = "ConsultaCategoriasToolStripMenuItem";
-            this.ConsultaCategoriasToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.ConsultaCategoriasToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaCategoriasToolStripMenuItem.Text = "&Categorías";
             // 
             // ConsultaGastosToolStripMenuItem
             // 
             this.ConsultaGastosToolStripMenuItem.Name = "ConsultaGastosToolStripMenuItem";
-            this.ConsultaGastosToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.ConsultaGastosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaGastosToolStripMenuItem.Text = "Gastos";
             // 
             // ConsultaIngresosToolStripMenuItem
             // 
             this.ConsultaIngresosToolStripMenuItem.Name = "ConsultaIngresosToolStripMenuItem";
-            this.ConsultaIngresosToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.ConsultaIngresosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaIngresosToolStripMenuItem.Text = "Ingresos";
             // 
             // ConsultaPresupuestosToolStripMenuItem
@@ -156,7 +156,7 @@ namespace FinanzasPersonalesProyectoFinal
             // ConsultaRolesToolStripMenuItem
             // 
             this.ConsultaRolesToolStripMenuItem.Name = "ConsultaRolesToolStripMenuItem";
-            this.ConsultaRolesToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.ConsultaRolesToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.ConsultaRolesToolStripMenuItem.Text = "Roles";
             // 
             // MainForm
