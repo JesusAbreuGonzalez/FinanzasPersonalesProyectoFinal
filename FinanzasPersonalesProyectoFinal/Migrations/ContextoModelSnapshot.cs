@@ -41,37 +41,37 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         new
                         {
                             CategoriaId = 1,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 782, DateTimeKind.Local).AddTicks(41),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 209, DateTimeKind.Local).AddTicks(5830),
                             NombreCategoria = "Alimentación"
                         },
                         new
                         {
                             CategoriaId = 2,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 783, DateTimeKind.Local).AddTicks(7334),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3516),
                             NombreCategoria = "Educación"
                         },
                         new
                         {
                             CategoriaId = 3,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 783, DateTimeKind.Local).AddTicks(7357),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3721),
                             NombreCategoria = "Entretenimiento"
                         },
                         new
                         {
                             CategoriaId = 4,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 783, DateTimeKind.Local).AddTicks(7359),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3728),
                             NombreCategoria = "Pagos"
                         },
                         new
                         {
                             CategoriaId = 5,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 783, DateTimeKind.Local).AddTicks(7361),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3730),
                             NombreCategoria = "Ropa"
                         },
                         new
                         {
                             CategoriaId = 6,
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 783, DateTimeKind.Local).AddTicks(7363),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3732),
                             NombreCategoria = "Vivienda"
                         });
                 });
@@ -182,21 +182,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         {
                             PermisoId = 1,
                             Descripcion = "Agrega o Modifica",
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 785, DateTimeKind.Local).AddTicks(2015),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(980),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 2,
                             Descripcion = "Consulta",
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 785, DateTimeKind.Local).AddTicks(4184),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3753),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 3,
                             Descripcion = "Elimina",
-                            FechaCreacion = new DateTime(2021, 3, 24, 15, 3, 42, 785, DateTimeKind.Local).AddTicks(4194),
+                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3762),
                             VecesAsignado = 0
                         });
                 });
