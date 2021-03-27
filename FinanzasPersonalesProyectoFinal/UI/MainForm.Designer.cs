@@ -45,16 +45,19 @@ namespace FinanzasPersonalesProyectoFinal
             this.ConsultaGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConsultaIngresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.rGastosToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.rIngresosToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cGastosToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.cIngresosToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.cPresupuestosToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.UsuarioToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -185,6 +188,11 @@ namespace FinanzasPersonalesProyectoFinal
             this.toolStrip.TabIndex = 3;
             this.toolStrip.Text = "toolStrip";
             // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
             // rGastosToolStripButton
             // 
             this.rGastosToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -203,10 +211,10 @@ namespace FinanzasPersonalesProyectoFinal
             this.rIngresosToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.rIngresosToolStripButton.Text = "toolStripButton1";
             // 
-            // toolStripSeparator
+            // toolStripSeparator1
             // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // cGastosToolStripButton
             // 
@@ -232,21 +240,33 @@ namespace FinanzasPersonalesProyectoFinal
             this.cPresupuestosToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.cPresupuestosToolStripButton.Text = "&Paste";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.UsuarioToolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 540);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(859, 22);
+            this.statusStrip.TabIndex = 5;
+            this.statusStrip.Text = "statusStrip1";
+            // 
+            // UsuarioToolStripStatusLabel
+            // 
+            this.UsuarioToolStripStatusLabel.Name = "UsuarioToolStripStatusLabel";
+            this.UsuarioToolStripStatusLabel.Size = new System.Drawing.Size(35, 17);
+            this.UsuarioToolStripStatusLabel.Text = "Texto";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 562);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -258,6 +278,8 @@ namespace FinanzasPersonalesProyectoFinal
             this.menuStrip1.PerformLayout();
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,6 +312,8 @@ namespace FinanzasPersonalesProyectoFinal
         private System.Windows.Forms.ToolStripButton rIngresosToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        public System.Windows.Forms.ToolStripStatusLabel UsuarioToolStripStatusLabel;
     }
 }
 

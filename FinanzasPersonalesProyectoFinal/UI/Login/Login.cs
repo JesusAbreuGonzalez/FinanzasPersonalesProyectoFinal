@@ -81,6 +81,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             {
                 LoginErrorProvider.Clear();
                 var ventana = new MainForm();
+                ventana.UsuarioToolStripStatusLabel.Text = NombreCompletoTextBox.Text;
                 ventana.Show();
             }
             else

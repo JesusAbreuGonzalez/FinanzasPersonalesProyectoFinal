@@ -1,4 +1,7 @@
-﻿using FinanzasPersonalesProyectoFinal.UI.Consultas;
+﻿using FinanzasPersonalesProyectoFinal.BLL;
+using FinanzasPersonalesProyectoFinal.Entidades;
+using FinanzasPersonalesProyectoFinal.UI.Consultas;
+using FinanzasPersonalesProyectoFinal.UI.Login;
 using FinanzasPersonalesProyectoFinal.UI.Registros;
 using System;
 using System.Collections.Generic;
@@ -43,7 +46,6 @@ namespace FinanzasPersonalesProyectoFinal
             this.cGastosToolStripButton.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
             this.cIngresosToolStripButton.Click += new EventHandler(this.ConsultaIngresosToolStripMenuItem_ItemClicked);
             this.cPresupuestosToolStripButton.Click += new EventHandler(this.ConsultaPresupuestosToolStripMenuItem_ItemClicked);
-            
         }
 
         //Eventos Consultas
@@ -132,14 +134,6 @@ namespace FinanzasPersonalesProyectoFinal
             ingresos.MdiParent = this;
             ingresos.Show();
         }
-
-
-        //ToolStrip
-        //Registros
-
-
-        //Consultas
-
 
         private void Menu_Load(object sender, EventArgs e)
         {
