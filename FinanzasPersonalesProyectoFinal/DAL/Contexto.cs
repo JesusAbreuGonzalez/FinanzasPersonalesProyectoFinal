@@ -1,4 +1,5 @@
-﻿using FinanzasPersonalesProyectoFinal.Entidades;
+﻿using FinanzasPersonalesProyectoFinal.BLL;
+using FinanzasPersonalesProyectoFinal.Entidades;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -43,14 +44,18 @@ namespace FinanzasPersonalesProyectoFinal.DAL
                 new Permisos() { PermisoId = 2, Descripcion = "Consulta"},
                 new Permisos() { PermisoId = 3, Descripcion = "Elimina"}
             );
-            /*
+            
+            modelBuilder.Entity<RolesDetalle>().HasData(
+                new RolesDetalle() { RolDetalleId = 1, RolId = 1, PermisoId = 1, EsAsignado = true}
+            );
+            
             modelBuilder.Entity<Roles>().HasData(
-                new Roles() { RolId = 1, Descripcion = "Registrador", esActivo = true}
+                new Roles() { RolId = 1, Descripcion = "Registrador", esActivo = true, RolesDetalle = new List<RolesDetalle>()}
             );
 
             modelBuilder.Entity<Usuarios>().HasData(
-                new Usuarios() { UsuarioId = 1, Nombres = "Username", Clave = "username123", Activo = true, RolId = 1}
-            );*/
+                new Usuarios() { UsuarioId = 1, Nombres = "Username", Clave = Utilidades.GetSHA256("username123"), Activo = true}
+            );
         }
     }
 }
