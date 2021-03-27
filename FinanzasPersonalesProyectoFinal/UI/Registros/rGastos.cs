@@ -156,7 +156,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
 
             Limpiar();
 
-            if (RolesBLL.Eliminar(id))
+            if (GastosBLL.Eliminar(id))
                 MessageBox.Show("El gasto ha sido eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 GastosErrorProvider.SetError(GastoIdNumericUpDown, "Este Id no existe en la base de datos");
