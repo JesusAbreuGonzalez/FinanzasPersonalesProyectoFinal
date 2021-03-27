@@ -37,12 +37,21 @@ namespace FinanzasPersonalesProyectoFinal.DAL
                 new Categorias() { CategoriaId = 5, NombreCategoria = "Ropa"},
                 new Categorias() { CategoriaId = 6, NombreCategoria = "Vivienda"}
             );
-
+                
             modelBuilder.Entity<Permisos>().HasData(
                 new Permisos() { PermisoId = 1, Descripcion = "Agrega o Modifica"},
                 new Permisos() { PermisoId = 2, Descripcion = "Consulta"},
                 new Permisos() { PermisoId = 3, Descripcion = "Elimina"}
             );
+            /*
+            modelBuilder.Entity<Roles>().HasData(
+                new Roles() { RolId = 1, Descripcion = "Registrador", esActivo = true}
+            );
+
+            modelBuilder.Entity<Usuarios>().HasData(
+                new Usuarios() { UsuarioId = 1, Nombres = "Username", Clave = "username123", Activo = true, RolId = 1}
+            );*/
         }
     }
 }
+ 

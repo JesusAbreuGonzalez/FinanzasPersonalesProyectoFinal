@@ -211,47 +211,47 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 1, new DateTime(2021, 3, 26, 21, 17, 9, 209, DateTimeKind.Local).AddTicks(5830), "Alimentación", null });
+                values: new object[] { 1, new DateTime(2021, 3, 26, 22, 51, 43, 544, DateTimeKind.Local).AddTicks(4197), "Alimentación", null });
 
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 2, new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3516), "Educación", null });
+                values: new object[] { 2, new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1609), "Educación", null });
 
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 3, new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3721), "Entretenimiento", null });
+                values: new object[] { 3, new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1637), "Entretenimiento", null });
 
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 4, new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3728), "Pagos", null });
+                values: new object[] { 4, new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1640), "Pagos", null });
 
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 5, new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3730), "Ropa", null });
+                values: new object[] { 5, new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1642), "Ropa", null });
 
             migrationBuilder.InsertData(
                 table: "Categorias",
                 columns: new[] { "CategoriaId", "FechaCreacion", "NombreCategoria", "UsuarioId" },
-                values: new object[] { 6, new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3732), "Vivienda", null });
+                values: new object[] { 6, new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1644), "Vivienda", null });
 
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 1, "Agrega o Modifica", new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(980), 0 });
+                values: new object[] { 1, "Agrega o Modifica", new DateTime(2021, 3, 26, 22, 51, 43, 547, DateTimeKind.Local).AddTicks(9755), 0 });
 
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 2, "Consulta", new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3753), 0 });
+                values: new object[] { 2, "Consulta", new DateTime(2021, 3, 26, 22, 51, 43, 548, DateTimeKind.Local).AddTicks(2361), 0 });
 
             migrationBuilder.InsertData(
                 table: "Permisos",
                 columns: new[] { "PermisoId", "Descripcion", "FechaCreacion", "VecesAsignado" },
-                values: new object[] { 3, "Elimina", new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3762), 0 });
+                values: new object[] { 3, "Elimina", new DateTime(2021, 3, 26, 22, 51, 43, 548, DateTimeKind.Local).AddTicks(2372), 0 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Categorias_UsuarioId",

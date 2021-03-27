@@ -41,37 +41,37 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         new
                         {
                             CategoriaId = 1,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 209, DateTimeKind.Local).AddTicks(5830),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 544, DateTimeKind.Local).AddTicks(4197),
                             NombreCategoria = "Alimentación"
                         },
                         new
                         {
                             CategoriaId = 2,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3516),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1609),
                             NombreCategoria = "Educación"
                         },
                         new
                         {
                             CategoriaId = 3,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3721),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1637),
                             NombreCategoria = "Entretenimiento"
                         },
                         new
                         {
                             CategoriaId = 4,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3728),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1640),
                             NombreCategoria = "Pagos"
                         },
                         new
                         {
                             CategoriaId = 5,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3730),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1642),
                             NombreCategoria = "Ropa"
                         },
                         new
                         {
                             CategoriaId = 6,
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 211, DateTimeKind.Local).AddTicks(3732),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 546, DateTimeKind.Local).AddTicks(1644),
                             NombreCategoria = "Vivienda"
                         });
                 });
@@ -182,21 +182,21 @@ namespace FinanzasPersonalesProyectoFinal.Migrations
                         {
                             PermisoId = 1,
                             Descripcion = "Agrega o Modifica",
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(980),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 547, DateTimeKind.Local).AddTicks(9755),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 2,
                             Descripcion = "Consulta",
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3753),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 548, DateTimeKind.Local).AddTicks(2361),
                             VecesAsignado = 0
                         },
                         new
                         {
                             PermisoId = 3,
                             Descripcion = "Elimina",
-                            FechaCreacion = new DateTime(2021, 3, 26, 21, 17, 9, 213, DateTimeKind.Local).AddTicks(3762),
+                            FechaCreacion = new DateTime(2021, 3, 26, 22, 51, 43, 548, DateTimeKind.Local).AddTicks(2372),
                             VecesAsignado = 0
                         });
                 });
