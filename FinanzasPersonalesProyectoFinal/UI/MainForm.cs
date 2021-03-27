@@ -17,6 +17,7 @@ namespace FinanzasPersonalesProyectoFinal
         public MainForm()
         {
             InitializeComponent();
+            //menuStrip
             //Registros
             this.RegistroRolesToolStripMenuItem.Click += new EventHandler(this.RegistroRolesToolStripMenuItem_ItemClicked);
             this.RegistroUsuariosToolStripMenuItem.Click += new EventHandler(this.RegistroUsuariosToolStripMenuItem_ItemClicked);
@@ -32,6 +33,17 @@ namespace FinanzasPersonalesProyectoFinal
             this.ConsultaCategoriasToolStripMenuItem.Click += new EventHandler(this.ConsultaCategoriasToolStripMenuItem_ItemClicked);
             this.ConsultaGastosToolStripMenuItem.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
             this.ConsultaIngresosToolStripMenuItem.Click += new EventHandler(this.ConsultaIngresosToolStripMenuItem_ItemClicked);
+
+            //ToolStrip
+            //Registros
+            this.rGastosToolStripButton.Click += new EventHandler(this.RegistroGastosToolStripMenuItem_ItemClicked);
+            this.rIngresosToolStripButton.Click += new EventHandler(this.RegistroIngresosToolStripMenuItem_ItemClicked);
+
+            //Consultas
+            this.cGastosToolStripButton.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
+            this.cIngresosToolStripButton.Click += new EventHandler(this.ConsultaIngresosToolStripMenuItem_ItemClicked);
+            this.cPresupuestosToolStripButton.Click += new EventHandler(this.ConsultaPresupuestosToolStripMenuItem_ItemClicked);
+            
         }
 
         //Eventos Consultas
@@ -119,8 +131,15 @@ namespace FinanzasPersonalesProyectoFinal
             var ingresos = new rIngresos();
             ingresos.MdiParent = this;
             ingresos.Show();
-        }           
-                
+        }
+
+
+        //ToolStrip
+        //Registros
+
+
+        //Consultas
+
 
         private void Menu_Load(object sender, EventArgs e)
         {
