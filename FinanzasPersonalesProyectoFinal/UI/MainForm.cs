@@ -17,6 +17,7 @@ namespace FinanzasPersonalesProyectoFinal
 {
     public partial class MainForm : Form
     {
+        
         public MainForm()
         {
             InitializeComponent();
@@ -46,6 +47,7 @@ namespace FinanzasPersonalesProyectoFinal
             this.cGastosToolStripButton.Click += new EventHandler(this.ConsultaGastosToolStripMenuItem_ItemClicked);
             this.cIngresosToolStripButton.Click += new EventHandler(this.ConsultaIngresosToolStripMenuItem_ItemClicked);
             this.cPresupuestosToolStripButton.Click += new EventHandler(this.ConsultaPresupuestosToolStripMenuItem_ItemClicked);
+
         }
 
         //Eventos Consultas
@@ -145,9 +147,6 @@ namespace FinanzasPersonalesProyectoFinal
 
         }
 
-        private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
+        
     }
 }

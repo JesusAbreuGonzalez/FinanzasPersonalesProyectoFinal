@@ -189,7 +189,6 @@ namespace FinanzasPersonalesProyectoFinal
             this.toolStrip.Size = new System.Drawing.Size(982, 27);
             this.toolStrip.TabIndex = 3;
             this.toolStrip.Text = "toolStrip";
-            this.toolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip_ItemClicked);
             // 
             // toolStripSeparator
             // 
