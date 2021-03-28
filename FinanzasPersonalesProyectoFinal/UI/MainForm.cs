@@ -144,5 +144,10 @@ namespace FinanzasPersonalesProyectoFinal
         {
 
         }
+
+        private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
