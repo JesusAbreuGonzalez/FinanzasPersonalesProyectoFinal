@@ -32,7 +32,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             PresupuestosIdNumericUpDown.Value = presupuestos.PresupuestoId;
             NombresTextBox.Text = presupuestos.NombrePresupuesto;
             MontoPresupuestoTextBox.Text = Convert.ToString(presupuestos.MontoPresupuesto);
-            CategoriasComboBox.SelectedIndex = presupuestos.CategoriaId;
+            CategoriasComboBox.SelectedIndex = presupuestos.CategoriaId - 1;
         }
 
         private Presupuestos LlenaClase()
@@ -43,7 +43,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             presupuestos.PresupuestoId = (int)PresupuestosIdNumericUpDown.Value;
             presupuestos.NombrePresupuesto = NombresTextBox.Text;
             presupuestos.MontoPresupuesto = Convert.ToInt32(MontoPresupuestoTextBox.Text);
-            presupuestos.CategoriaId = CategoriasComboBox.SelectedIndex;
+            presupuestos.CategoriaId = CategoriasComboBox.SelectedIndex + 1;
 
             return presupuestos;
         }

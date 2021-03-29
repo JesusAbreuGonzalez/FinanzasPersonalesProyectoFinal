@@ -39,6 +39,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         {
             GastoIdNumericUpDown.Value = 0;
             DescipcionTextBox.Clear();
+            if (gastosDetalle != null)
+                gastosDetalle.Clear();
+            if (detalle != null)
+                detalle.Clear();
             GastosDataGridView.DataSource = null;
             GastosErrorProvider.Clear();
         }

@@ -40,8 +40,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         {
             RolIdNumericUpDown.Value = 0;
             DescripcionTextBox.Clear();
-           /* ActivoCheckBox.Checked = false;
-            AsignadoCheckBox.Checked = false;*/
+            ActivoCheckBox.Checked = false;
+            AsignadoCheckBox.Checked = false;
             if(detalle != null)
                 detalle.Clear();
             if(rolesDetalle != null)
