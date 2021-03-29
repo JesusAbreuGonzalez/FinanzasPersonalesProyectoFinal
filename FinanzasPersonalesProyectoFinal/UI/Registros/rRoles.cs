@@ -40,10 +40,12 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
         {
             RolIdNumericUpDown.Value = 0;
             DescripcionTextBox.Clear();
-            ActivoCheckBox.Checked = false;
-            AsignadoCheckBox.Checked = false;
-            if (detalle != null)
+           /* ActivoCheckBox.Checked = false;
+            AsignadoCheckBox.Checked = false;*/
+            if(detalle != null)
                 detalle.Clear();
+            if(rolesDetalle != null)
+                rolesDetalle.Clear();
             RolDataGridView.DataSource = null;
             RolesErrorProvider.Clear();
         }
@@ -53,6 +55,7 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
             RolIdNumericUpDown.Value = roles.RolId;
             DescripcionTextBox.Text = roles.Descripcion;
             ActivoCheckBox.Checked = roles.esActivo;
+            rolesDetalle.Clear();
             this.rolesDetalle = roles.RolesDetalle;
             LlenarGrid();
         }
