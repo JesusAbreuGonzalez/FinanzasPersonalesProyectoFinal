@@ -50,9 +50,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.NombreCompletoTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NombreCompletoTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.NombreCompletoTextBox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.NombreCompletoTextBox.Location = new System.Drawing.Point(51, 129);
+            this.NombreCompletoTextBox.Location = new System.Drawing.Point(58, 172);
+            this.NombreCompletoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NombreCompletoTextBox.Name = "NombreCompletoTextBox";
-            this.NombreCompletoTextBox.Size = new System.Drawing.Size(311, 27);
+            this.NombreCompletoTextBox.Size = new System.Drawing.Size(355, 32);
             this.NombreCompletoTextBox.TabIndex = 0;
             this.NombreCompletoTextBox.Text = "Nombre Completo";
             this.NombreCompletoTextBox.Enter += new System.EventHandler(this.NombreCompletoTextBox_Enter);
@@ -62,10 +63,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // 
             this.ClaveTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClaveTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.ClaveTextBox.Location = new System.Drawing.Point(51, 178);
+            this.ClaveTextBox.Location = new System.Drawing.Point(58, 237);
+            this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
-            this.ClaveTextBox.Size = new System.Drawing.Size(311, 27);
+            this.ClaveTextBox.Size = new System.Drawing.Size(355, 32);
             this.ClaveTextBox.TabIndex = 1;
             this.ClaveTextBox.Text = "Contraseña";
             this.ClaveTextBox.Enter += new System.EventHandler(this.ClaveTextBox_Enter);
@@ -74,9 +76,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // MostrarCheckBox
             // 
             this.MostrarCheckBox.AutoSize = true;
-            this.MostrarCheckBox.Location = new System.Drawing.Point(296, 215);
+            this.MostrarCheckBox.Location = new System.Drawing.Point(338, 287);
+            this.MostrarCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MostrarCheckBox.Name = "MostrarCheckBox";
-            this.MostrarCheckBox.Size = new System.Drawing.Size(70, 19);
+            this.MostrarCheckBox.Size = new System.Drawing.Size(86, 24);
             this.MostrarCheckBox.TabIndex = 2;
             this.MostrarCheckBox.Text = "Mostrar ";
             this.MostrarCheckBox.UseVisualStyleBackColor = true;
@@ -85,9 +88,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // CorreoPictureBox
             // 
             this.CorreoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("CorreoPictureBox.Image")));
-            this.CorreoPictureBox.Location = new System.Drawing.Point(17, 129);
+            this.CorreoPictureBox.Location = new System.Drawing.Point(19, 172);
+            this.CorreoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CorreoPictureBox.Name = "CorreoPictureBox";
-            this.CorreoPictureBox.Size = new System.Drawing.Size(28, 31);
+            this.CorreoPictureBox.Size = new System.Drawing.Size(32, 41);
             this.CorreoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CorreoPictureBox.TabIndex = 3;
             this.CorreoPictureBox.TabStop = false;
@@ -95,9 +99,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // ClavePictureBox
             // 
             this.ClavePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ClavePictureBox.Image")));
-            this.ClavePictureBox.Location = new System.Drawing.Point(17, 178);
+            this.ClavePictureBox.Location = new System.Drawing.Point(19, 237);
+            this.ClavePictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClavePictureBox.Name = "ClavePictureBox";
-            this.ClavePictureBox.Size = new System.Drawing.Size(28, 31);
+            this.ClavePictureBox.Size = new System.Drawing.Size(32, 41);
             this.ClavePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ClavePictureBox.TabIndex = 4;
             this.ClavePictureBox.TabStop = false;
@@ -105,10 +110,11 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // TituloPictureBox
             // 
             this.TituloPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TituloPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("TituloPictureBox.Image")));
-            this.TituloPictureBox.Location = new System.Drawing.Point(125, 12);
+            this.TituloPictureBox.Image = global::FinanzasPersonalesProyectoFinal.Properties.Resources.usuario_2_;
+            this.TituloPictureBox.Location = new System.Drawing.Point(143, 16);
+            this.TituloPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TituloPictureBox.Name = "TituloPictureBox";
-            this.TituloPictureBox.Size = new System.Drawing.Size(132, 104);
+            this.TituloPictureBox.Size = new System.Drawing.Size(151, 139);
             this.TituloPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.TituloPictureBox.TabIndex = 5;
             this.TituloPictureBox.TabStop = false;
@@ -117,9 +123,10 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // 
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LoginButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.LoginButton.Location = new System.Drawing.Point(125, 235);
+            this.LoginButton.Location = new System.Drawing.Point(143, 313);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(132, 36);
+            this.LoginButton.Size = new System.Drawing.Size(151, 48);
             this.LoginButton.TabIndex = 6;
             this.LoginButton.Text = "Entrar";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -131,9 +138,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 289);
+            this.ClientSize = new System.Drawing.Size(432, 375);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.TituloPictureBox);
             this.Controls.Add(this.ClavePictureBox);
@@ -142,8 +149,9 @@ namespace FinanzasPersonalesProyectoFinal.UI.Login
             this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.NombreCompletoTextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(396, 328);
-            this.MinimumSize = new System.Drawing.Size(396, 328);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(450, 422);
+            this.MinimumSize = new System.Drawing.Size(450, 422);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";

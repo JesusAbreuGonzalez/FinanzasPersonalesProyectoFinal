@@ -111,7 +111,8 @@ namespace FinanzasPersonalesProyectoFinal.UI.Registros
                 new GastosDetalle()
                 {
                     GastoId = (int)GastoIdNumericUpDown.Value,
-                    MontoGasto = Convert.ToInt32(MontoTextBox.Text),
+                    MontoGasto = Convert.ToDouble(MontoTextBox.Text),
+                    FechaGasto = DateTime.Now
                 }
             );
 
